@@ -17,7 +17,7 @@ var (
 )
 
 type Quests interface {
-	HandleQuests(id int, lang string) (dofusNoobsLoc *string, err error)
+	HandleQuests(id int) (dofusNoobsLoc *string, err error)
 }
 
 type quests struct {
@@ -29,9 +29,9 @@ func NewQuests(httpClient client.HttpClient, sitemap *domain.DofusNoobsRemoteSit
 	return &quests{httpClient: httpClient, sitemap: sitemap}
 }
 
-func (h *quests) HandleQuests(id int, lang string) (*string, error) {
+func (h *quests) HandleQuests(id int) (*string, error) {
 	params := url.Values{}
-	params.Add(domain.LangParam, lang)
+	params.Add(domain.LangParam, domain.LangParamDefault)
 	body, err := h.httpClient.RequestDofusApi(fmt.Sprintf("%s/%d?%s", domain.QuestsPath, id, params.Encode()))
 	if err != nil {
 		return nil, err
@@ -42,9 +42,9 @@ func (h *quests) HandleQuests(id int, lang string) (*string, error) {
 		return nil, err
 	}
 
-	slug := quest.Slug[lang]
+	slug := quest.Slug[domain.LangParamDefault]
 	if slug == "" {
-		return nil, fmt.Errorf("quest slug not found for lang %s", lang)
+		return nil, fmt.Errorf("quest slug not found for lang %s", domain.LangParamDefault)
 	}
 
 	slug = convertSlugDofusPourLesNoobs(slug)
@@ -82,35 +82,33 @@ func levenshteinDistance(s1, s2 string) int {
 		return lenS1
 	}
 
-	matrix := make([][]int, lenS1+1)
-	for i := range matrix {
-		matrix[i] = make([]int, lenS2+1)
-	}
+	prevRow := make([]int, lenS2+1)
+	currRow := make([]int, lenS2+1)
 
-	for i := 0; i <= lenS1; i++ {
-		matrix[i][0] = i
-	}
 	for j := 0; j <= lenS2; j++ {
-		matrix[0][j] = j
+		prevRow[j] = j
 	}
 
 	for i := 1; i <= lenS1; i++ {
+		currRow[0] = i
 		for j := 1; j <= lenS2; j++ {
 			cost := 0
 			if s1[i-1] != s2[j-1] {
 				cost = 1
 			}
-			matrix[i][j] = int(math.Min(
-				float64(matrix[i-1][j]+1),
-				math.Min(
-					float64(matrix[i][j-1]+1),
-					float64(matrix[i-1][j-1]+cost),
-				),
-			))
+			currRow[j] = minInt(prevRow[j]+1, minInt(currRow[j-1]+1, prevRow[j-1]+cost))
 		}
+		prevRow, currRow = currRow, prevRow
 	}
 
-	return matrix[lenS1][lenS2]
+	return prevRow[lenS2]
+}
+
+func minInt(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
 }
 
 func convertSlugDofusPourLesNoobs(slug string) string {

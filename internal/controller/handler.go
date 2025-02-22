@@ -28,10 +28,9 @@ func (h *httpHandler) HandleQuests(c *gin.Context) {
 		return
 	}
 
-	lang := c.DefaultQuery(domain.LangParam, domain.LangParamDefault)
 	shouldRedirect := c.DefaultQuery(domain.RedirectParam, "") == "1"
 
-	location, err := h.quests.HandleQuests(id, lang)
+	location, err := h.quests.HandleQuests(id)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
