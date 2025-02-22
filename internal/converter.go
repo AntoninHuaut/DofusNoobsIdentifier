@@ -2,18 +2,12 @@ package internal
 
 import (
 	"fmt"
-	"golang.org/x/text/runes"
-	"golang.org/x/text/transform"
-	"golang.org/x/text/unicode/norm"
 	"math"
-	"regexp"
 	"strings"
-	"unicode"
 )
 
 var (
-	locationCache                 = make(map[string]string)
-	regexAlphaNumericalHyphenOnly = regexp.MustCompile(`[^a-zA-Z0-9-]+`)
+	locationCache = make(map[string]string)
 )
 
 func GetLocationFromTarget(titles map[string]string, target string) string {
@@ -84,36 +78,4 @@ func minInt(a, b int) int {
 		return a
 	}
 	return b
-}
-
-func convertSlugDofusPourLesNoobs(slug string) []string {
-	slug = strings.TrimSpace(slug)
-	slug = strings.ToLower(slug)
-	slug = strings.ReplaceAll(slug, " ", "-")
-	slug = strings.ReplaceAll(slug, "'", "-")
-	slug = strings.ReplaceAll(slug, "--", "-")
-	slug = strings.ReplaceAll(slug, "œ", "oe")
-	slugBis := strings.ReplaceAll(slug, "é", "eacute")
-
-	postEdit := func(s string) string {
-		s = removeAccents(s)
-		s = regexAlphaNumericalHyphenOnly.ReplaceAllString(s, "")
-		s = strings.ReplaceAll(s, "--", "-")
-
-		return s
-	}
-
-	slug = postEdit(slug)
-	slugBis = postEdit(slugBis)
-
-	return []string{slug, slugBis}
-}
-
-func removeAccents(s string) string {
-	t := transform.Chain(norm.NFD, runes.Remove(runes.In(unicode.Mn)), norm.NFC)
-	result, _, err := transform.String(t, s)
-	if err != nil {
-		return s
-	}
-	return result
 }

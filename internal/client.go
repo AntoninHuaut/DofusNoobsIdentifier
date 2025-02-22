@@ -56,7 +56,7 @@ func (h *httpClient) GetPageTitleDofusNoobs(resTitles map[string]string, urls []
 
 		titles := wpTitleRegex.FindStringSubmatch(string(body))
 		if len(titles) < 2 {
-			fmt.Printf("Title not found: %s\n", url)
+			fmt.Printf("Title not found for %s\n", url)
 			resultCh <- urlMapped{URL: url, Title: ""}
 			return
 		}
@@ -71,7 +71,7 @@ func (h *httpClient) GetPageTitleDofusNoobs(resTitles map[string]string, urls []
 	for currentIndex < len(urls) {
 		waitCounter := 0
 		time.Sleep(500 * time.Millisecond)
-		fmt.Println("Requesting titles:", urls[currentIndex], len(urls))
+		fmt.Printf("Requesting title for %s (%d)\n", urls[currentIndex].Loc, len(urls))
 		for i := 0; i < dofusNoobsParallelRequests; i++ {
 			if currentIndex+i >= len(urls) {
 				break

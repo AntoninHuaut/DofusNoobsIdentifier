@@ -2,7 +2,6 @@ package main
 
 import (
 	"DofusNoobsIdentifierOffline/boot"
-	"DofusNoobsIdentifierOffline/internal"
 	"fmt"
 	"log"
 )
@@ -28,12 +27,12 @@ func main() {
 	}
 	fmt.Println("Total titles:", len(titles))
 
-	output := make(map[int]string)
-	for _, quest := range quests.Data {
-		loc := internal.GetLocationFromTarget(titles, quest.Name["fr"])
-		output[quest.ID] = loc
-	}
-
-	internal.WriteToFile("output.json", output, false)
-	internal.WriteToFile("output_formatted.json", output, true)
+	//output := make(map[int]string)
+	//for _, quest := range quests.Data {
+	//	loc := internal.GetLocationFromTarget(titles, quest.Name["fr"])
+	//	output[quest.ID] = loc
+	//}
+	//
+	//internal.WriteToFile("output.json", output, false)
+	//internal.WriteToFile("output_formatted.json", output, true)
 }

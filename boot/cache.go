@@ -76,10 +76,6 @@ func LoadSitemap() (*domain.DofusNoobsRemoteSitemap, error) {
 		return nil, err
 	}
 
-	for i := range sitemap.Urls {
-		sitemap.Urls[i].FillSlug(DofusNoobsUrl)
-	}
-
 	internal.WriteToFile(domain.SitemapFile, sitemap, true)
 	return sitemap, nil
 }
