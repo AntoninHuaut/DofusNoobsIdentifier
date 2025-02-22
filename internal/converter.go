@@ -1,7 +1,6 @@
 package internal
 
 import (
-	"DofusNoobsIdentifierOffline/domain"
 	"fmt"
 	"golang.org/x/text/runes"
 	"golang.org/x/text/transform"
@@ -17,27 +16,34 @@ var (
 	regexAlphaNumericalHyphenOnly = regexp.MustCompile(`[^a-zA-Z0-9-]+`)
 )
 
-func GetLocationFromTarget(sitemap *domain.DofusNoobsRemoteSitemap, target string) string {
+func GetLocationFromTarget(titles map[string]string, target string) string {
 	if loc, ok := locationCache[target]; ok {
 		return loc
 	}
 
-	minDistance, closestLoc := findClosestStringLevenshtein(target, sitemap)
+	targetFormatted := strings.TrimSpace(strings.ToLower(target))
+	minDistance, closestLoc, closestTitle := findClosestStringLevenshtein(targetFormatted, titles)
+	if minDistance > 0 {
+		fmt.Printf("%d - %s - %s - %s\n", minDistance, target, closestTitle, closestLoc)
+	}
 	return fmt.Sprintf("%d - %s", minDistance, closestLoc)
 }
 
-func findClosestStringLevenshtein(target string, sitemap *domain.DofusNoobsRemoteSitemap) (int, string) {
+func findClosestStringLevenshtein(targetFormatted string, titles map[string]string) (int, string, string) {
 	minDistance := math.MaxInt64
 	closestLoc := ""
-	for _, s := range sitemap.Urls {
-		distance := levenshteinDistance(s.FakeSlug, target)
+	closestTitle := ""
+	for url, title := range titles {
+		titleFormatted := strings.TrimSpace(strings.ToLower(title))
+		distance := levenshteinDistance(titleFormatted, targetFormatted)
 		if distance < minDistance {
 			minDistance = distance
-			closestLoc = s.Loc
+			closestTitle = title
+			closestLoc = url
 		}
 	}
 
-	return minDistance, closestLoc
+	return minDistance, closestLoc, closestTitle
 }
 
 func levenshteinDistance(s1, s2 string) int {
