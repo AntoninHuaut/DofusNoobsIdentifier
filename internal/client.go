@@ -70,7 +70,7 @@ func (h *httpClient) GetPageTitleDofusNoobs(resTitles map[string]string, urls []
 	currentIndex := 0
 	for currentIndex < len(urls) {
 		waitCounter := 0
-		time.Sleep(350 * time.Millisecond)
+		time.Sleep(500 * time.Millisecond)
 		fmt.Println("Requesting titles:", urls[currentIndex], len(urls))
 		for i := 0; i < dofusNoobsParallelRequests; i++ {
 			if currentIndex+i >= len(urls) {
