@@ -37,7 +37,7 @@ func main() {
 		location, similarity, locLog := internal.GetLocationFromTarget(titles, quest)
 
 		similarityNb, convertErr := strconv.ParseFloat(similarity, 64)
-		if locLog != "" && ((convertErr == nil && similarityNb < 0.9) || similarity == "contains") {
+		if locLog != "" && ((convertErr == nil && similarityNb < 0.9) || similarity == "prefixOrSuffix") {
 			logs = append(logs, locLog)
 		}
 		output[quest.ID] = location
