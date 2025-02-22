@@ -5,6 +5,8 @@ import (
 	"DofusNoobsIdentifierOffline/internal"
 	"fmt"
 	"log"
+	"sort"
+	"strconv"
 	"strings"
 )
 
@@ -33,14 +35,18 @@ func main() {
 	output := make(map[int]string)
 	for _, quest := range quests.Data {
 		location, similarity, locLog := internal.GetLocationFromTarget(titles, quest)
-		if locLog != "" && similarity < 0.9 {
+
+		similarityNb, convertErr := strconv.ParseFloat(similarity, 64)
+		if locLog != "" && ((convertErr == nil && similarityNb < 0.9) || similarity == "contains") {
 			logs = append(logs, locLog)
 		}
 		output[quest.ID] = location
 	}
 
+	sort.Strings(logs)
 	fmt.Println(strings.Join(logs, ""))
+	internal.WriteToFile("logs.txt", strings.Join(logs, ""), false, true)
 
-	internal.WriteToFile("output.json", output, false)
-	internal.WriteToFile("output_formatted.json", output, true)
+	internal.WriteToFile("mapping.json", output, false, false)
+	internal.WriteToFile("mapping_formatted.json", output, true, false)
 }

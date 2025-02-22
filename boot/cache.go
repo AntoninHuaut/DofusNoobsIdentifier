@@ -21,18 +21,6 @@ func LoadTitles(urls []domain.DofusNoobsRemoteSitemapUrl) (map[string]string, er
 		if err = json.Unmarshal(bodyFile, &titles); err != nil {
 			return nil, err
 		}
-		return titles, nil
-	}
-
-	if internal.FileExists(domain.TitlesTmpFile) {
-		fmt.Println("Loading TitlesTmpFile from cache")
-		bodyFile, err := os.ReadFile(domain.TitlesTmpFile)
-		if err != nil {
-			log.Fatalf("LoadTitlesTmp: %v", err)
-		}
-		if err = json.Unmarshal(bodyFile, &titles); err != nil {
-			return nil, err
-		}
 	}
 
 	var urlsFiltered []domain.DofusNoobsRemoteSitemapUrl
@@ -49,7 +37,7 @@ func LoadTitles(urls []domain.DofusNoobsRemoteSitemapUrl) (map[string]string, er
 	if err != nil {
 		log.Fatalf("GetPageTitleDofusNoobs: %v", err)
 	}
-	internal.WriteToFile(domain.TitlesFile, titles, true)
+	internal.WriteToFile(domain.TitlesFile, titles, true, false)
 	return titles, nil
 }
 
@@ -76,7 +64,7 @@ func LoadSitemap() (*domain.DofusNoobsRemoteSitemap, error) {
 		return nil, err
 	}
 
-	internal.WriteToFile(domain.SitemapFile, sitemap, true)
+	internal.WriteToFile(domain.SitemapFile, sitemap, true, false)
 	return sitemap, nil
 }
 
@@ -98,6 +86,6 @@ func LoadQuests() (*domain.DofusDbSearchQuest, error) {
 	if err != nil {
 		log.Fatalf("RequestDofusApiAllQuests: %v", err)
 	}
-	internal.WriteToFile(domain.QuestsFile, quests, true)
+	internal.WriteToFile(domain.QuestsFile, quests, true, false)
 	return quests, nil
 }

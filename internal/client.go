@@ -90,7 +90,7 @@ func (h *httpClient) GetPageTitleDofusNoobs(resTitles map[string]string, urls []
 				if err != nil {
 					return nil, err
 				}
-				if err = os.WriteFile(domain.TitlesTmpFile, jsonMap, 0644); err != nil {
+				if err = os.WriteFile(domain.TitlesFile, jsonMap, 0644); err != nil {
 					return nil, err
 				}
 			case err := <-errCh:

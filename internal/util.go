@@ -11,19 +11,24 @@ func FileExists(filename string) bool {
 	return !os.IsNotExist(err)
 }
 
-func WriteToFile(filename string, data any, formatted bool) {
-	var jsonOutput []byte
-	var err error
-	if formatted {
-		jsonOutput, err = json.MarshalIndent(data, "", "  ")
-	} else {
-		jsonOutput, err = json.Marshal(data)
-	}
-	if err != nil {
-		log.Fatalf("json.Marshal: %v", err)
-	}
+func WriteToFile(filename string, data any, formatted bool, raw bool) {
+	var outputByte []byte
 
-	if err = os.WriteFile(filename, jsonOutput, 0644); err != nil {
+	if raw {
+		outputByte = []byte(data.(string))
+	} else {
+		var err error
+		if formatted {
+			outputByte, err = json.MarshalIndent(data, "", "  ")
+		} else {
+			outputByte, err = json.Marshal(data)
+		}
+		if err != nil {
+			log.Fatalf("json.Marshal: %v", err)
+		}
+	}
+	
+	if err := os.WriteFile(filename, outputByte, 0644); err != nil {
 		log.Fatalf("os.WriteFile: %v", err)
 	}
 }
