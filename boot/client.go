@@ -1,13 +1,13 @@
 package boot
 
 import (
-	"DofusNoobsIdentifier/internal/client"
+	"DofusNoobsIdentifierOffline/internal"
 )
 
 var (
-	httpClient client.HttpClient
+	HttpClient internal.HttpClient
 )
 
 func LoadClient() {
-	httpClient = client.NewHttpClient(DofusApiUrl, DofusNoobsUrl)
+	HttpClient = internal.NewHttpClient(DofusApiUrl, DofusNoobsUrl)
 }

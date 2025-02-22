@@ -1,5 +1,0 @@
-services:
-  discordnoobsidentifier:
-    image: ghcr.io/antoninhuaut/dofusnoobsidentifier:master
-    container_name: dofusnoobsidentifier
-    restart: unless-stopped
