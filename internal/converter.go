@@ -1,81 +1,93 @@
 package internal
 
 import (
+	"DofusNoobsIdentifierOffline/domain"
 	"fmt"
-	"math"
+	"github.com/adrg/strutil"
+	"github.com/adrg/strutil/metrics"
 	"strings"
 )
 
+type locationValue struct {
+	Location   string
+	Similarity float64
+}
+
 var (
-	locationCache = make(map[string]string)
+	locationCache = make(map[string]locationValue)
 )
 
-func GetLocationFromTarget(titles map[string]string, target string) string {
-	if loc, ok := locationCache[target]; ok {
-		return loc
-	}
-
-	targetFormatted := strings.TrimSpace(strings.ToLower(target))
-	minDistance, closestLoc, closestTitle := findClosestStringLevenshtein(targetFormatted, titles)
-	if minDistance > 0 {
-		fmt.Printf("%d - %s - %s - %s\n", minDistance, target, closestTitle, closestLoc)
-	}
-	return fmt.Sprintf("%d - %s", minDistance, closestLoc)
+func formatTitle(title string) string {
+	title = strings.ToLower(strings.TrimSpace(title))
+	title = strings.ReplaceAll(title, "œ", "oe")
+	return title
 }
 
-func findClosestStringLevenshtein(targetFormatted string, titles map[string]string) (int, string, string) {
-	minDistance := math.MaxInt64
+func formatTag(quest domain.DofusDbQuestLight, target string) string {
+	if strings.HasSuffix(target, "touriste") {
+		target = strings.ReplaceAll(target, "touriste", "touriste/amateur/spécialiste/expert")
+	} else if strings.HasSuffix(target, "amateur") {
+		target = strings.ReplaceAll(target, "amateur", "touriste/amateur/spécialiste/expert")
+	} else if strings.HasSuffix(target, "spécialiste") {
+		target = strings.ReplaceAll(target, "spécialiste", "touriste/amateur/spécialiste/expert")
+	} else if strings.HasSuffix(target, "expert") {
+		target = strings.ReplaceAll(target, "expert", "touriste/amateur/spécialiste/expert")
+	}
+
+	if quest.IsAlignment() {
+		if strings.HasPrefix(target, "on recherche ") {
+			return target
+		}
+
+		lvl := quest.GetAlignmentLevel()
+		if lvl > 0 {
+			return fmt.Sprintf("alignement %d : %s", lvl+1, target)
+		} else {
+			return fmt.Sprintf("alignement : %s", target)
+		}
+	}
+	return target
+}
+
+func skipQuest(quest domain.DofusDbQuestLight, target string) bool {
+	return strings.HasPrefix(target, "offrande à ") || strings.HasPrefix(target, "chasse au dopeul ")
+}
+
+func GetLocationFromTarget(titles map[string]string, quest domain.DofusDbQuestLight) (string, float64, string) {
+	targetKey := quest.Name["fr"]
+	targetFormatted := formatTag(quest, formatTitle(targetKey))
+	if skipQuest(quest, targetFormatted) {
+		return "[SKIPPED] Offrande ou Chasse au Dopeul", 0, ""
+	}
+
+	if loc, ok := locationCache[targetKey]; ok {
+		return loc.Location, loc.Similarity, ""
+	}
+
+	bestSimilarity, closestLoc, closestTitle := findClosestString(targetFormatted, titles)
+	locationCache[targetKey] = locationValue{Location: closestLoc, Similarity: bestSimilarity}
+	return closestLoc, bestSimilarity, fmt.Sprintf("%f | %60s | %60s (-> %s)\n", bestSimilarity, targetFormatted, closestTitle, closestLoc)
+}
+
+func findClosestString(targetFormatted string, titles map[string]string) (float64, string, string) {
+	bestSimilarity := .0
+
 	closestLoc := ""
 	closestTitle := ""
+
 	for url, title := range titles {
-		titleFormatted := strings.TrimSpace(strings.ToLower(title))
-		distance := levenshteinDistance(titleFormatted, targetFormatted)
-		if distance < minDistance {
-			minDistance = distance
-			closestTitle = title
+		titleFormatted := formatTitle(title)
+		if titleFormatted == targetFormatted {
+			return 1, url, title
+		}
+
+		similarity := strutil.Similarity(titleFormatted, targetFormatted, metrics.NewJaccard())
+		if similarity > bestSimilarity {
+			bestSimilarity = similarity
 			closestLoc = url
+			closestTitle = titleFormatted
 		}
 	}
 
-	return minDistance, closestLoc, closestTitle
-}
-
-func levenshteinDistance(s1, s2 string) int {
-	lenS1 := len(s1)
-	lenS2 := len(s2)
-
-	if lenS1 == 0 {
-		return lenS2
-	}
-	if lenS2 == 0 {
-		return lenS1
-	}
-
-	prevRow := make([]int, lenS2+1)
-	currRow := make([]int, lenS2+1)
-
-	for j := 0; j <= lenS2; j++ {
-		prevRow[j] = j
-	}
-
-	for i := 1; i <= lenS1; i++ {
-		currRow[0] = i
-		for j := 1; j <= lenS2; j++ {
-			cost := 0
-			if s1[i-1] != s2[j-1] {
-				cost = 1
-			}
-			currRow[j] = minInt(prevRow[j]+1, minInt(currRow[j-1]+1, prevRow[j-1]+cost))
-		}
-		prevRow, currRow = currRow, prevRow
-	}
-
-	return prevRow[lenS2]
-}
-
-func minInt(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
+	return bestSimilarity, closestLoc, closestTitle
 }
