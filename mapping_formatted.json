@@ -1,5 +1,5 @@
 {
-  "dungeons": {
+  "dungeon": {
     "1": "https://www.dofuspourlesnoobs.com/cour-du-bouftou-royal.html",
     "10": "https://www.dofuspourlesnoobs.com/clairiegravere-du-checircne-mou.html",
     "100": "https://www.dofuspourlesnoobs.com/cimetiere-des-mastodontes.html",
@@ -145,7 +145,7 @@
     "98": "https://www.dofuspourlesnoobs.com/temple-de-koutoulou.html",
     "99": "https://www.dofuspourlesnoobs.com/palais-de-dantineacutea.html"
   },
-  "quests": {
+  "quest": {
     "1000": "[SKIPPED] Offrande ou Chasse au Dopeul",
     "1001": "[SKIPPED] Offrande ou Chasse au Dopeul",
     "1002": "[SKIPPED] Offrande ou Chasse au Dopeul",
@@ -1955,7 +1955,7 @@
     "859": "https://www.dofuspourlesnoobs.com/mais-pourquoi-est-il-si-meacutechant.html",
     "86": "https://www.dofuspourlesnoobs.com/mission-de-reconnaissance-au-cimetiegravere.html",
     "860": "https://www.dofuspourlesnoobs.com/copains-comme-cochons.html",
-    "861": "https://www.dofuspourlesnoobs.com/la-clef-de-la-reacuteussite.html",
+    "861": "https://www.dofuspourlesnoobs.com/la-clef-de-la-reacuteussite-nowel.html",
     "862": "https://www.dofuspourlesnoobs.com/tous-les-chemins-megravenent-au-rhum.html",
     "863": "https://www.dofuspourlesnoobs.com/lempire-de-la-jeteacutee.html",
     "864": "https://www.dofuspourlesnoobs.com/fraicirccheur-de-lrsquoivre.html",

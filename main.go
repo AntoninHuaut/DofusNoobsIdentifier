@@ -12,8 +12,8 @@ import (
 )
 
 const (
-	questsKey   = "quests"
-	dungeonsKey = "dungeons"
+	questsKey   = "quest"
+	dungeonsKey = "dungeon"
 )
 
 func main() {
