@@ -1,0 +1,8 @@
+0.360000 |                                      temple maudit d'araknas |                                                l'île maudite (-> https://www.dofuspourlesnoobs.com/l-ile-maudite.html)
+0.400000 |                                             salle du minotot |                                                      minotot (-> https://www.dofuspourlesnoobs.com/minotot.html)
+0.472222 |                                    repaire de sphincter cell |                               dans la peau de sphincter cell (-> https://www.dofuspourlesnoobs.com/dans-la-peau-de-sphincter-cell.html)
+0.565217 |                                     cale de l'arche d'otomaï |                                               arche d'otomaï (-> https://www.dofuspourlesnoobs.com/arche-dotomaiuml.html)
+0.681818 |                                        fabrique de malléfisk |                                           fabrique mallefisk (-> https://www.dofuspourlesnoobs.com/fabrique-mallefisk.html)
+0.840000 |                                     tempête de l'eliocalypse |                                     tempête de l’eliocalypse (-> https://www.dofuspourlesnoobs.com/tempete-de-l-eliocalypse.html)
+0.866667 |                                bibliothèque du maître corbac |                                bibliothèque du maitre corbac (-> https://www.dofuspourlesnoobs.com/bibliotheque-du-maitre-corbac.html)
+prefixOrSuffix |                                         aquadôme de merkator |                   chemin vers le donjon aquadôme de merkator (-> https://www.dofuspourlesnoobs.com/chemin-vers-le-donjon-aquadome-de-merkator.html)
