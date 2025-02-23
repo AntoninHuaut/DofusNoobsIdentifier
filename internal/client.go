@@ -24,7 +24,8 @@ var (
 )
 
 type HttpClient interface {
-	RequestDofusApiAllQuests() (*domain.DofusDbSearchQuest, error)
+	RequestDofusApiAllQuests() (*domain.DofusDbSearchResource[domain.DofusDbQuestLight], error)
+	RequestDofusApiAllDungeons() (*domain.DofusDbSearchResource[domain.DofusDbDungeonLight], error)
 	RequestDofusSitemap() ([]byte, error)
 	GetPageTitleDofusNoobs(initMaps map[string]string, url []domain.DofusNoobsRemoteSitemapUrl) (map[string]string, error)
 }
@@ -105,36 +106,44 @@ func (h *httpClient) GetPageTitleDofusNoobs(resTitles map[string]string, urls []
 	return resTitles, nil
 }
 
-func (h *httpClient) RequestDofusApiAllQuests() (*domain.DofusDbSearchQuest, error) {
-	quests := &domain.DofusDbSearchQuest{
+func (h *httpClient) RequestDofusApiAllQuests() (*domain.DofusDbSearchResource[domain.DofusDbQuestLight], error) {
+	return RequestDofusApiAllResources[domain.DofusDbQuestLight](h.dofusApiUrl, "quests")
+}
+
+func (h *httpClient) RequestDofusApiAllDungeons() (*domain.DofusDbSearchResource[domain.DofusDbDungeonLight], error) {
+	return RequestDofusApiAllResources[domain.DofusDbDungeonLight](h.dofusApiUrl, "dungeons")
+}
+
+func RequestDofusApiAllResources[T any](dofusApiUrl string, path string) (*domain.DofusDbSearchResource[T], error) {
+	resources := &domain.DofusDbSearchResource[T]{
 		Limit: 50,
 	}
 
-	resultCh := make(chan *domain.DofusDbSearchQuest, dofusDbParallelRequests)
+	resultCh := make(chan *domain.DofusDbSearchResource[T], dofusDbParallelRequests)
 	errCh := make(chan error, dofusDbParallelRequests)
 
 	makeRequest := func(skip int) {
-		fmt.Printf("Requesting quests: skip=%d limit=%d total=%d\n", skip, quests.Limit, quests.Total)
-		body, err := request(fmt.Sprintf("%s/quests?$limit=%d&$skip=%d", h.dofusApiUrl, quests.Limit, skip))
+		fmt.Printf("Requesting resources: skip=%d limit=%d total=%d\n", skip, resources.Limit, resources.Total)
+		body, err := request(fmt.Sprintf("%s/%s?$limit=%d&$skip=%d", dofusApiUrl, path, resources.Limit, skip))
 		if err != nil {
 			errCh <- err
 			return
 		}
 
-		var subQuests *domain.DofusDbSearchQuest
-		if err = json.Unmarshal(body, &subQuests); err != nil {
+		var subResources *domain.DofusDbSearchResource[T]
+		if err = json.Unmarshal(body, &subResources); err != nil {
 			errCh <- err
 			return
 		}
 
-		resultCh <- subQuests
+		resultCh <- subResources
 	}
 
-	for quests.Total == 0 || quests.Limit+quests.Skip <= quests.Total {
+	for resources.Total == 0 || resources.Limit+resources.Skip <= resources.Total {
 		waitCounter := 0
 		for i := 0; i < dofusDbParallelRequests; i++ {
-			offsetSkip := quests.Skip + i*quests.Limit
-			if quests.Total != 0 && offsetSkip >= quests.Total {
+			offsetSkip := resources.Skip + i*resources.Limit
+			if resources.Total != 0 && offsetSkip >= resources.Total {
 				break
 			}
 
@@ -144,11 +153,11 @@ func (h *httpClient) RequestDofusApiAllQuests() (*domain.DofusDbSearchQuest, err
 
 		for i := 0; i < waitCounter; i++ {
 			select {
-			case subQuests := <-resultCh:
-				quests.Total = subQuests.Total
-				quests.Limit = subQuests.Limit
-				quests.Skip += subQuests.Limit
-				quests.Data = append(quests.Data, subQuests.Data...)
+			case subResources := <-resultCh:
+				resources.Total = subResources.Total
+				resources.Limit = subResources.Limit
+				resources.Skip += subResources.Limit
+				resources.Data = append(resources.Data, subResources.Data...)
 			case err := <-errCh:
 				return nil, err
 			}
@@ -158,7 +167,7 @@ func (h *httpClient) RequestDofusApiAllQuests() (*domain.DofusDbSearchQuest, err
 	close(resultCh)
 	close(errCh)
 
-	return quests, nil
+	return resources, nil
 }
 
 func (h *httpClient) RequestDofusSitemap() ([]byte, error) {

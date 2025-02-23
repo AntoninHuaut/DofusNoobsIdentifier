@@ -1,0 +1,1591 @@
+{
+  "total": 144,
+  "limit": 50,
+  "skip": 200,
+  "data": [
+    {
+      "id": 114,
+      "name": {
+        "de": "Heiligtum von Torkélonia",
+        "en": "Turtelonia's Sanctuary",
+        "es": "Santuario de Torkelonia",
+        "fr": "Sanctuaire de Torkélonia",
+        "id": "802369",
+        "pt": "Santuário de Torkelônia"
+      }
+    },
+    {
+      "id": 115,
+      "name": {
+        "de": "Kharnozors Schlupfwinkel",
+        "en": "Kharnotaurus's Lair",
+        "es": "Guarida de Karnozor",
+        "fr": "Repaire du Kharnozor",
+        "id": "803379",
+        "pt": "Covil do Kharnossauro"
+      }
+    },
+    {
+      "id": 116,
+      "name": {
+        "de": "Draegnerys' Herausforderung",
+        "en": "Draegnerys's Trial",
+        "es": "Prueba de Dragenerys",
+        "fr": "Épreuve de Draegnerys",
+        "id": "803409",
+        "pt": "Prova de Draegnerys"
+      }
+    },
+    {
+      "id": 117,
+      "name": {
+        "de": "Baum des Todes",
+        "en": "Tree of Death",
+        "es": "Árbol de Muerte",
+        "fr": "Arbre de Mort",
+        "id": "821293",
+        "pt": "Árvore da Morte"
+      }
+    },
+    {
+      "id": 118,
+      "name": {
+        "de": "Eisen der Tyrannei",
+        "en": "Shackles of Tyranny",
+        "es": "Cadenas de la Tiranía",
+        "fr": "Fers de la Tyrannie",
+        "id": "821294",
+        "pt": "Ferros da Tirania"
+      }
+    },
+    {
+      "id": 119,
+      "name": {
+        "de": "Urteil des Gleichgewichts",
+        "en": "Judgement of the Scales",
+        "es": "Sentencia de la Balanza",
+        "fr": "Sentence de la Balance",
+        "id": "821295",
+        "pt": "Sentença da Balança"
+      }
+    },
+    {
+      "id": 120,
+      "name": {
+        "de": "Thron des Blutes",
+        "en": "Blood Throne",
+        "es": "Trono de Sangre",
+        "fr": "Trône de Sang",
+        "id": "821296",
+        "pt": "Trono de Sangue"
+      }
+    },
+    {
+      "id": 121,
+      "name": {
+        "de": "Sturm der Eliokalypse",
+        "en": "Eliocalypse Storm",
+        "es": "Tormenta del Selocalipsis",
+        "fr": "Tempête de l'Eliocalypse",
+        "id": "827980",
+        "pt": "Tempestade do Eliocalipse"
+      }
+    },
+    {
+      "id": 122,
+      "name": {
+        "de": "Dojo des Windes",
+        "en": "Wind Dojo",
+        "es": "Dojo del Viento",
+        "fr": "Dojo du Vent",
+        "id": "841884",
+        "pt": "Dojo do Vento"
+      }
+    },
+    {
+      "id": 123,
+      "name": {
+        "de": "Tal der Herrin über die Gewässer",
+        "en": "Valley of the Lady of the Water",
+        "es": "Valle de la Dama del Agua",
+        "fr": "Vallée de la Dame des eaux",
+        "id": "845108",
+        "pt": "Vale da Dama das Águas"
+      }
+    },
+    {
+      "id": 124,
+      "name": {
+        "de": "Feuerwirrk-Fabrik",
+        "en": "Fouxwork Factory",
+        "es": "Fábrica de Fux Artificiales",
+        "fr": "Fabrique de foux d'artifice",
+        "id": "847310",
+        "pt": "Fábrica de Fox de Artifício"
+      }
+    },
+    {
+      "id": 125,
+      "name": {
+        "de": "Damadryas Bambushain",
+        "en": "Damadrya's Bamboo Grove",
+        "es": "Bambusería de Kodámade",
+        "fr": "Bambusaie de Damadrya",
+        "id": "848217",
+        "pt": "Bambuzal de Damadríade"
+      }
+    },
+    {
+      "id": 126,
+      "name": {
+        "de": "Tanukouï Sans Werkstatt",
+        "en": "Tanukouï San's Workshop",
+        "es": "Taller de Tanukui San",
+        "fr": "Atelier du Tanukouï San",
+        "id": "848678",
+        "pt": "Ateliê do Tanukui San"
+      }
+    },
+    {
+      "id": 131,
+      "name": {
+        "de": "Heim der Geister",
+        "en": "Spirit Abode",
+        "es": "Casa de los Espíritus",
+        "fr": "Demeure des Esprits",
+        "id": "853405",
+        "pt": "Morada dos Espíritos"
+      }
+    },
+    {
+      "id": 132,
+      "name": {
+        "de": "Shogun Tofugawas Gruft",
+        "en": "Shogun Tofugawa's Tomb",
+        "es": "Tumba del Shogun Tofugawa",
+        "fr": "Tombe du Shogun Tofugawa",
+        "id": "854259",
+        "pt": "Tumba do Xogum Tofugawa"
+      }
+    },
+    {
+      "id": 133,
+      "name": {
+        "de": "Orukams Erinnerung",
+        "en": "Orukam's Memory",
+        "es": "Memoria de Orukam",
+        "fr": "Mémoire d'Orukam",
+        "id": "873152",
+        "pt": "Memória de Orukam"
+      }
+    },
+    {
+      "id": 134,
+      "name": {
+        "de": "Imagiros Erinnerung",
+        "en": "Imagiro's Memory",
+        "es": "Recuerdo de Imagiro",
+        "fr": "Souvenir d'Imagiro",
+        "id": "873153",
+        "pt": "Lembrança de Imagiro"
+      }
+    },
+    {
+      "id": 135,
+      "name": {
+        "de": "Kabahals Ritual",
+        "en": "Kabaal Ritual",
+        "es": "Ritual de Kabaal",
+        "fr": "Rituel de Kabahal",
+        "id": "899938",
+        "pt": "Ritual de Kabaal"
+      }
+    },
+    {
+      "id": 136,
+      "name": {
+        "de": "Schlacht der Purpurnen Morgenröte",
+        "en": "Battle of the Crimson Dawn",
+        "es": "Batalla de la Aurora Púrpura",
+        "fr": "Bataille de l'Aurore Pourpre",
+        "id": "925292",
+        "pt": "Batalha da Aurora Púrpura"
+      }
+    },
+    {
+      "id": 138,
+      "name": {
+        "de": "Gob-Akademie",
+        "en": "Gob Akademy",
+        "es": "Akademia de los Goblins",
+        "fr": "Akadémie des Gobs",
+        "id": "936693",
+        "pt": "Akademia dos Gobs"
+      }
+    },
+    {
+      "id": 139,
+      "name": {
+        "de": "Grabhügel des langen Schlafs",
+        "en": "Long Slumber's Barrow",
+        "es": "Túmulo del Largo Sueño",
+        "fr": "Tertre du long sommeil",
+        "id": "937489",
+        "pt": "Monte do sono profundo"
+      }
+    },
+    {
+      "id": 140,
+      "name": {
+        "de": "Kammer der Verhexung",
+        "en": "Chamber of Evils",
+        "es": "Cámara de los Maleficios",
+        "fr": "Chambre des maléfices",
+        "id": "969526",
+        "pt": "Câmara das maldições"
+      }
+    },
+    {
+      "id": 141,
+      "name": {
+        "de": "Bastion der Sauerhammer",
+        "en": "Bitter-Hammers' Stronghold",
+        "es": "Bastión de los Martilloseco",
+        "fr": "Bastion des Marteaux-Aigris",
+        "id": "977014",
+        "pt": "Bastião dos Martelos Amargos"
+      }
+    },
+    {
+      "id": 142,
+      "name": {
+        "de": "Waldzuflucht",
+        "en": "Sylvan Refuge",
+        "es": "Refugio Silvestre",
+        "fr": "Refuge sylvestre",
+        "id": "981870",
+        "pt": "Refúgio Silvestre"
+      }
+    },
+    {
+      "id": 143,
+      "name": {
+        "de": "Königlicher Tofustall",
+        "en": "Royal Tofu House",
+        "es": "Tofullinero Real",
+        "fr": "Tofulailler Royal",
+        "id": "1078950",
+        "pt": "Tofuleiro Real"
+      }
+    },
+    {
+      "id": 144,
+      "name": {
+        "de": "Hof des Königlichen Fresssacks",
+        "en": "Royal Gobball's Court",
+        "es": "Corte del Jalató Real",
+        "fr": "Cour du Bouftou Royal",
+        "id": "1068792",
+        "pt": "Pátio do Papatudo Real"
+      }
+    },
+    {
+      "id": 145,
+      "name": {
+        "de": "Weich-Eich-Lichtung",
+        "en": "Soft Oak Clearing",
+        "es": "Claro del Roble Blando",
+        "fr": "Clairière du Chêne Mou",
+        "id": "1068794",
+        "pt": "Clareira do Carvalho Mole"
+      }
+    },
+    {
+      "id": 146,
+      "name": {
+        "de": "Dungeon der Schattenschmiede",
+        "en": "Blacksmith Dungeon",
+        "es": "Mazmorra de los Herreros",
+        "fr": "Donjon des Forgerons",
+        "id": "1068795",
+        "pt": "Calabouço dos Ferreiros"
+      }
+    },
+    {
+      "id": 147,
+      "name": {
+        "de": "Höhle von Crocabulia",
+        "en": "Crocabulia's Lair",
+        "es": "Antro de Cocabulia",
+        "fr": "Antre de Crocabulia",
+        "id": "1068796",
+        "pt": "Antro de Crocabulia"
+      }
+    },
+    {
+      "id": 148,
+      "name": {
+        "de": "Herz des Labyrinths des Minotorors",
+        "en": "Inner Labyrinth of the Minotoror",
+        "es": "Centro del Laberinto del Minotauroro",
+        "fr": "Centre du Labyrinthe du Minotoror",
+        "id": "1068797",
+        "pt": "Centro do Labirinto do Minotoror"
+      }
+    },
+    {
+      "id": 149,
+      "name": {
+        "de": "Meister Rabs Bibliothek",
+        "en": "Lord Crow's Library",
+        "es": "Biblioteca del Maestro Cuerbok",
+        "fr": "Bibliothèque du Maître Corbac",
+        "id": "1068798",
+        "pt": "Biblioteca do Mestre Corvoc"
+      }
+    },
+    {
+      "id": 150,
+      "name": {
+        "de": "Scheune des Ausgehungerten Sonnenblümchens",
+        "en": "Famished Sunflower's Barn",
+        "es": "Granero del Girasol Hambriento",
+        "fr": "Grange du Tournesol Affamé",
+        "id": "1068638",
+        "pt": "Granja do Girassol Faminto"
+      }
+    },
+    {
+      "id": 151,
+      "name": {
+        "de": "Unterschlupf des Königlichen Multiblobs",
+        "en": "Royal Rainbow Blop Lair",
+        "es": "Antro del Blop Multicolor Real",
+        "fr": "Antre du Blop Multicolore Royal",
+        "id": "1068799",
+        "pt": "Antro do Blop Arco-Íris Real"
+      }
+    },
+    {
+      "id": 152,
+      "name": {
+        "de": "Hausmausefalle der Schwarzen Ratte",
+        "en": "Black Rat's Moumousetrap",
+        "es": "Raratonera de la Rata Negra",
+        "fr": "Sousouricière du Rat Noir",
+        "id": "1068800",
+        "pt": "Armadilha para Cacamundongo do Rato Negro - Sexta sala"
+      }
+    },
+    {
+      "id": 153,
+      "name": {
+        "de": "Bwork-Dungeon",
+        "en": "Bwork Dungeon",
+        "es": "Mazmorra de los Bworks",
+        "fr": "Donjon des Bworks",
+        "id": "1068801",
+        "pt": "Calabouço dos Bworks"
+      }
+    },
+    {
+      "id": 154,
+      "name": {
+        "de": "Krachlerfelszacken",
+        "en": "Crackler's Rocky Peaks",
+        "es": "Picos Rocosos de los Crujidores",
+        "fr": "Pitons Rocheux des Craqueleurs",
+        "id": "1068802",
+        "pt": "Picos Rochosos dos Smagadores"
+      }
+    },
+    {
+      "id": 155,
+      "name": {
+        "de": "Vorratskammer der Weißen Ratte",
+        "en": "White Rat's Pantry",
+        "es": "Despensa de la Rata Blanca",
+        "fr": "Garde-manger du Rat Blanc",
+        "id": "1068791",
+        "pt": "Despensa do Rato Branco"
+      }
+    },
+    {
+      "id": 156,
+      "name": {
+        "de": "Unterschlupf des MuWulfs",
+        "en": "Moowolf Lair",
+        "es": "Guarida del Maxilubo",
+        "fr": "Tanière du Meulou",
+        "id": "1068790",
+        "pt": "Toca do Mulobo"
+      }
+    },
+    {
+      "id": 157,
+      "name": {
+        "de": "Dungeon der Skelette",
+        "en": "Skeleton Dungeon",
+        "es": "Mazmorra de los Esqueletos",
+        "fr": "Donjon des Squelettes",
+        "id": "1068789",
+        "pt": "Calabouço dos Skeletos"
+      }
+    },
+    {
+      "id": 158,
+      "name": {
+        "de": "Höhlen des Kuhlosses",
+        "en": "Koolich Cavern",
+        "es": "Cueva del Trankitronko",
+        "fr": "Caverne du Koulosse",
+        "id": "1068788",
+        "pt": "Caverna do Tronkoso"
+      }
+    },
+    {
+      "id": 159,
+      "name": {
+        "de": "Moons Baum",
+        "en": "Moon's Tree",
+        "es": "Árbol de Moon",
+        "fr": "Arbre de Moon",
+        "id": "1068787",
+        "pt": "Árvore de Moon"
+      }
+    },
+    {
+      "id": 160,
+      "name": {
+        "de": "Verzauberte Sandburg",
+        "en": "Sandy Castle",
+        "es": "Castillo de Arena",
+        "fr": "Château Ensablé",
+        "id": "1068786",
+        "pt": "Castelo Arenoso"
+      }
+    },
+    {
+      "id": 161,
+      "name": {
+        "de": "Scarablatt-Dungeon",
+        "en": "Scaraleaf Dungeon",
+        "es": "Mazmorra de los Escarahojas",
+        "fr": "Donjon des Scarafeuilles",
+        "id": "1068785",
+        "pt": "Calabouço dos Scarafolhas"
+      }
+    },
+    {
+      "id": 162,
+      "name": {
+        "de": "Unterschlupf des Schweinedrachens",
+        "en": "Dragon Pig's Den",
+        "es": "Antro del Dragocerdo",
+        "fr": "Antre du Dragon Cochon",
+        "id": "1068803",
+        "pt": "Antro do Dragão-Porco"
+      }
+    },
+    {
+      "id": 60,
+      "name": {
+        "de": "Höhlen des Daxolossus",
+        "en": "Kolosso's Caverns",
+        "es": "Cavernas de Tejossus",
+        "fr": "Cavernes du Kolosso",
+        "id": "220627",
+        "pt": "Cavernas do Kolosso"
+      }
+    },
+    {
+      "id": 61,
+      "name": {
+        "de": "Vorraum des Barbärenstockes",
+        "en": "Bearbarian Antichamber",
+        "es": "Antecámara de los Golosotes",
+        "fr": "Antichambre des Gloursons",
+        "id": "220615",
+        "pt": "Antecâmara dos Glursos"
+      }
+    },
+    {
+      "id": 62,
+      "name": {
+        "de": "Dungeon der Mine von Arkal",
+        "en": "Sakai Mine Dungeon",
+        "es": "Mazmorra de la Mina de Kéfriho",
+        "fr": "Donjon de la mine de Sakaï",
+        "id": "220631",
+        "pt": "Calabouço da Mina de Kifril"
+      }
+    },
+    {
+      "id": 66,
+      "name": {
+        "de": "Höll O'Feens Gemüsegarten",
+        "en": "Al Howin's Vegetable Patch",
+        "es": "Huerto de Haluín",
+        "fr": "Potager d'Halouine",
+        "id": "272350",
+        "pt": "Horta de Relouin"
+      }
+    },
+    {
+      "id": 67,
+      "name": {
+        "de": "Sylarghs Transport",
+        "en": "Sylargh's Carrier",
+        "es": "Transportador de Sylargh",
+        "fr": "Transporteur de Sylargh",
+        "id": "272349",
+        "pt": "Transportador de Sylargh"
+      }
+    },
+    {
+      "id": 68,
+      "name": {
+        "de": "Die privaten Gesellschaftszimmer R.Klimms",
+        "en": "Klime's Private Suite",
+        "es": "Sala Privada de Klim",
+        "fr": "Salons privés de Klime",
+        "id": "272348",
+        "pt": "Salões privados de Klim"
+      }
+    },
+    {
+      "id": 69,
+      "name": {
+        "de": "Missiz Frizz Kaltschmiede",
+        "en": "Missiz Freezz's Frostforge",
+        "es": "Forjafría de Mizz Frizz",
+        "fr": "Forgefroide de Missiz Frizz",
+        "id": "272347",
+        "pt": "Forjafria de Missiz Frizz"
+      }
+    },
+    {
+      "id": 70,
+      "name": {
+        "de": "Nilezas Laboratorium",
+        "en": "Nileza's Laboratory",
+        "es": "Laboratorio de Nileza",
+        "fr": "Laboratoire de Nileza",
+        "id": "272345",
+        "pt": "Laboratório de Nileza"
+      }
+    },
+    {
+      "id": 71,
+      "name": {
+        "de": "Graf Primzahls Dungeon",
+        "en": "Count Harebourg's Dungeon",
+        "es": "Mazmorra del Conde Kontatrás",
+        "fr": "Donjon du Comte Harebourg",
+        "id": "272346",
+        "pt": "Calabouço do Conde Traspafrent"
+      }
+    },
+    {
+      "id": 72,
+      "name": {
+        "de": "Dramaks Theater",
+        "en": "Dramak's Theatre",
+        "es": "Teatro de Dramak",
+        "fr": "Théâtre de Dramak",
+        "id": "454739",
+        "pt": "Teatro de Dramak"
+      }
+    },
+    {
+      "id": 73,
+      "name": {
+        "de": "Merkators Unterwasserkuppel",
+        "en": "Merkator's Aquadome",
+        "es": "Acuadomo de Merkator",
+        "fr": "Aquadôme de Merkator",
+        "id": "454740",
+        "pt": "Aquódromo do Merkator"
+      }
+    },
+    {
+      "id": 74,
+      "name": {
+        "de": "Schattenpyramide",
+        "en": "Shadow's Pyramid",
+        "es": "Pirámide de Sombra",
+        "fr": "Pyramide d'Ombre",
+        "id": "454736",
+        "pt": "Pirâmide do Sombra"
+      }
+    },
+    {
+      "id": 75,
+      "name": {
+        "de": "Kanigroulas Höhle",
+        "en": "Kanigrula's Cave",
+        "es": "Gruta de Kanígrula",
+        "fr": "Grotte de Kanigroula",
+        "id": "454735",
+        "pt": "Gruta da Kanígrula"
+      }
+    },
+    {
+      "id": 76,
+      "name": {
+        "de": "Palast von König Nidas",
+        "en": "King Nidas's Palace",
+        "es": "Palacio del Rey Nidas",
+        "fr": "Palais du roi Nidas",
+        "id": "454738",
+        "pt": "Palácio do Rei Nidas"
+      }
+    },
+    {
+      "id": 77,
+      "name": {
+        "de": "Unruhtruhfabrik",
+        "en": "Brutatax's Factory",
+        "es": "Fábrica de Malefíscof",
+        "fr": "Fabrique de Malléfisk",
+        "id": "454737",
+        "pt": "Fábrica do Malefisko"
+      }
+    },
+    {
+      "id": 79,
+      "name": {
+        "de": "Griesengad-Stollen",
+        "en": "Drhossil's Caves",
+        "es": "Galería de Perfósil",
+        "fr": "Galerie du Phossile",
+        "id": "454734",
+        "pt": "Galeria do Perfuror"
+      }
+    },
+    {
+      "id": 80,
+      "name": {
+        "de": "Aviarium des Kamedelspatzen",
+        "en": "Cross Strich's Aviary",
+        "es": "Pajarera de Thor Pestruz",
+        "fr": "Volière de la Haute Truche",
+        "id": "454729",
+        "pt": "Viveiro do Altostruz"
+      }
+    },
+    {
+      "id": 81,
+      "name": {
+        "de": "Ring des Hauptmann Rot-Teka",
+        "en": "Captain Scarlight's Ring",
+        "es": "Ring del Capitán Eskarlata",
+        "fr": "Ring du Capitaine Ekarlatte",
+        "id": "454732",
+        "pt": "Ringue do Capitão Skarlat"
+      }
+    },
+    {
+      "id": 82,
+      "name": {
+        "de": "Höhle des Toxoliath",
+        "en": "Toxoliath's Cave",
+        "es": "Cueva de Toxoliat",
+        "fr": "Cave du Toxoliath",
+        "id": "454733",
+        "pt": "Porão do Toxolias"
+      }
+    },
+    {
+      "id": 83,
+      "name": {
+        "de": "Thron von Düsterhof",
+        "en": "Throne Room of the Dark Court",
+        "es": "Trono de la Corte Tenebrosa",
+        "fr": "Trône de la Cour Sombre",
+        "id": "454730",
+        "pt": "Trono da Corte Sombria"
+      }
+    },
+    {
+      "id": 84,
+      "name": {
+        "de": "Bauch des Wals",
+        "en": "Belly of the Whale",
+        "es": "Vientre de la Ballena",
+        "fr": "Ventre de la Baleine",
+        "id": "482278",
+        "pt": "Barriga da Baleia"
+      }
+    },
+    {
+      "id": 85,
+      "name": {
+        "de": "Fraktal-Megalith",
+        "en": "Fraktal's Megalith",
+        "es": "Megalito de Fraktal",
+        "fr": "Mégalithe de Fraktale",
+        "id": "470122",
+        "pt": "Megálito de Fraktal"
+      }
+    },
+    {
+      "id": 86,
+      "name": {
+        "de": "XLIIs Uruhrurwerk",
+        "en": "XLII's Metronomicon",
+        "es": "Relojarium de XLII",
+        "fr": "Horologium de XLII",
+        "id": "470121",
+        "pt": "Relogium de XLII"
+      }
+    },
+    {
+      "id": 87,
+      "name": {
+        "de": "Auge des Vortex",
+        "en": "Eye of Vortex",
+        "es": "Ojo de Vórtex",
+        "fr": "Œil de Vortex",
+        "id": "470120",
+        "pt": "Olho de Vórtex"
+      }
+    },
+    {
+      "id": 88,
+      "name": {
+        "de": "Kaakerlaaks Versteck",
+        "en": "Kickroach's Lair",
+        "es": "Escondrijo de Blatarata",
+        "fr": "Cache de Kankreblath",
+        "id": "485717",
+        "pt": "Esconderijo do Karoblatta"
+      }
+    },
+    {
+      "id": 89,
+      "name": {
+        "de": "Höhle der Arachkönigin",
+        "en": "Lair of the Rac Queen",
+        "es": "Guarida de Lasoberaña",
+        "fr": "Antre de la Reine Nyée",
+        "id": "512394",
+        "pt": "Antro da Rainha Donarânia"
+      }
+    },
+    {
+      "id": 90,
+      "name": {
+        "de": "Kardorims Krypta",
+        "en": "Kardorim's Crypt",
+        "es": "Cripta de Chadalid",
+        "fr": "Crypte de Kardorim",
+        "id": "554465",
+        "pt": "Cripta do Kardorim"
+      }
+    },
+    {
+      "id": 91,
+      "name": {
+        "de": "Le Tschucks Schiff",
+        "en": "LeChouque's Boat",
+        "es": "Navío de Le Chuko",
+        "fr": "Bateau du Chouque",
+        "id": "563306",
+        "pt": "Barco do Tchuke"
+      }
+    },
+    {
+      "id": 92,
+      "name": {
+        "de": "Moons Baum",
+        "en": "Moon's Tree",
+        "es": "Árbol de Moon",
+        "fr": "Arbre de Moon",
+        "id": "561280",
+        "pt": "Árvore de Moon"
+      }
+    },
+    {
+      "id": 93,
+      "name": {
+        "de": "Flohzillas Miausoleum",
+        "en": "Colousses's Meowsoleum",
+        "es": "Miausoleo de Piojoporojo",
+        "fr": "Miausolée du Pounicheur",
+        "id": "605686",
+        "pt": "Miausoléu do Repulgnante"
+      }
+    },
+    {
+      "id": 94,
+      "name": {
+        "de": "Ushs Plateau",
+        "en": "Ush's Plateau",
+        "es": "Plataforma de Ush",
+        "fr": "Plateau de Ush",
+        "id": "605687",
+        "pt": "Platô do Ush"
+      }
+    },
+    {
+      "id": 95,
+      "name": {
+        "de": "Maunzaugs Herausforderung",
+        "en": "Catseye Challenge",
+        "es": "Reto de Miauvizor",
+        "fr": "Défi du Chalœil",
+        "id": "605685",
+        "pt": "Desafio do Gatolho"
+      }
+    },
+    {
+      "id": 96,
+      "name": {
+        "de": "Tempel des Todes von Arachnas",
+        "en": "Cursed Araknas Temple",
+        "es": "Templo Maldito de Araknas",
+        "fr": "Temple Maudit d'Araknas",
+        "id": "625710",
+        "pt": "Templo maldito de Araknas"
+      }
+    },
+    {
+      "id": 97,
+      "name": {
+        "de": "Kapitän Menos Schiff",
+        "en": "Captain Meno's Ship",
+        "es": "Nave del Capitán Meno",
+        "fr": "Vaisseau du Capitaine Meno",
+        "id": "649892",
+        "pt": "Navio do Capitão Meno"
+      }
+    },
+    {
+      "id": 98,
+      "name": {
+        "de": "Tempel von Kutuluh",
+        "en": "Koutoulou's Temple",
+        "es": "Templo de Kutulú",
+        "fr": "Temple de Koutoulou",
+        "id": "649891",
+        "pt": "Templo de Katulu"
+      }
+    },
+    {
+      "id": 99,
+      "name": {
+        "de": "Palast von Zantinea",
+        "en": "Dantinea's Palace",
+        "es": "Palacio de Dientinea",
+        "fr": "Palais de Dantinéa",
+        "id": "649893",
+        "pt": "Palácio de Dentinea"
+      }
+    },
+    {
+      "id": 100,
+      "name": {
+        "de": "Mastodontenfriedhof",
+        "en": "Mastodon Cemetery",
+        "es": "Cementerio de los Mastodontes",
+        "fr": "Cimetière des Mastodontes",
+        "id": "765263",
+        "pt": "Cemitério dos Mastodontes"
+      }
+    },
+    {
+      "id": 101,
+      "name": {
+        "de": "Höhle von El Piekso",
+        "en": "El Piko's Cave",
+        "es": "Caverna de El Piko",
+        "fr": "Caverne d'El Piko",
+        "id": "697799",
+        "pt": "Caverna de El Piko"
+      }
+    },
+    {
+      "id": 102,
+      "name": {
+        "de": "Vater Wurms Darm",
+        "en": "Wurmlord's Passage",
+        "es": "Tripas de Anelidón",
+        "fr": "Boyau du Père Ver",
+        "id": "711420",
+        "pt": "Tripa do Ver Medo"
+      }
+    },
+    {
+      "id": 103,
+      "name": {
+        "de": "Gemach der Tal Kasha",
+        "en": "Chamber of Tal Kasha",
+        "es": "Cámara de Tal Kasha",
+        "fr": "Chambre de Tal Kasha",
+        "id": "711419",
+        "pt": "Câmara de Tal Kasha"
+      }
+    },
+    {
+      "id": 104,
+      "name": {
+        "de": "Graf Razoffs Lager",
+        "en": "Count Razof's Camp",
+        "es": "Campamento del Conde Razof",
+        "fr": "Camp du Comte Razof",
+        "id": "721683",
+        "pt": "Acampamento do Conde Razof"
+      }
+    },
+    {
+      "id": 105,
+      "name": {
+        "de": "Zelt der Mafeix-Riktanz",
+        "en": "Magik Riktus Big Top",
+        "es": "Carpa de los Magik Riktus",
+        "fr": "Chapiteau des Magik Riktus",
+        "id": "726579",
+        "pt": "Tenda dos Riktus Mágikus"
+      }
+    },
+    {
+      "id": 106,
+      "name": {
+        "de": "Herrenhaus von Vierpfötchen",
+        "en": "Forfut Manor",
+        "es": "Mansión de Kuatropatas",
+        "fr": "Manoir des Katrepat",
+        "id": "726799",
+        "pt": "Mansão de Dezist"
+      }
+    },
+    {
+      "id": 107,
+      "name": {
+        "de": "Ilyzaelle-Dungeon",
+        "en": "Ilyzaelle's Lookout",
+        "es": "Mirador de Ilyzaelle",
+        "fr": "Belvédère d'Ilyzaelle",
+        "id": "732919",
+        "pt": "Mirante de Ilyzaelle"
+      }
+    },
+    {
+      "id": 108,
+      "name": {
+        "de": "Bethels Turm",
+        "en": "Bethel's Tower",
+        "es": "Torre de Bethel",
+        "fr": "Tour de Bethel",
+        "id": "744300",
+        "pt": "Torre de Bethel"
+      }
+    },
+    {
+      "id": 109,
+      "name": {
+        "de": "Solars Turm",
+        "en": "Solar's Tower",
+        "es": "Torre de Solar",
+        "fr": "Tour de Solar",
+        "id": "744768",
+        "pt": "Torre de Solar"
+      }
+    },
+    {
+      "id": 110,
+      "name": {
+        "de": "König Dazahks Brauerei",
+        "en": "King Dazahk's Brewery",
+        "es": "Cervecería del Rey Dazahk",
+        "fr": "Brasserie du roi Dazak",
+        "id": "759633",
+        "pt": "Cervejaria do rei Dazak"
+      }
+    },
+    {
+      "id": 111,
+      "name": {
+        "de": "Tempel des Gottes Kao",
+        "en": "Chokao Temple",
+        "es": "Templo del Dios Kao",
+        "fr": "Temple du dieu Kao",
+        "id": "789095",
+        "pt": "Templo do deus Kau"
+      }
+    },
+    {
+      "id": 112,
+      "name": {
+        "de": "Knusperfabrik",
+        "en": "Crunchery",
+        "es": "Crocantería",
+        "fr": "Croquanterie",
+        "id": "789947",
+        "pt": "Smagularia"
+      }
+    },
+    {
+      "id": 113,
+      "name": {
+        "de": "Schmelzhütte der Wabhängigen",
+        "en": "Waddict Foundry",
+        "es": "Fundición de los Waddictos",
+        "fr": "Fonderie des Waddicts",
+        "id": "789304",
+        "pt": "Forja dos Waddicts"
+      }
+    },
+    {
+      "id": 1,
+      "name": {
+        "de": "Hof des Königlichen Fresssacks",
+        "en": "Royal Gobball's Court",
+        "es": "Corte del Jalató Real",
+        "fr": "Cour du Bouftou Royal",
+        "id": "752265",
+        "pt": "Pátio do Papatudo Real"
+      }
+    },
+    {
+      "id": 3,
+      "name": {
+        "de": "Meister Rabs Bibliothek",
+        "en": "Lord Crow's Library",
+        "es": "Biblioteca del Maestro Cuerbok",
+        "fr": "Bibliothèque du Maître Corbac",
+        "id": "220621",
+        "pt": "Biblioteca do Mestre Corvoc"
+      }
+    },
+    {
+      "id": 4,
+      "name": {
+        "de": "Herz des Labyrinths des Minotorors",
+        "en": "Inner Labyrinth of the Minotoror",
+        "es": "Centro del Laberinto del Minotauroro",
+        "fr": "Centre du Labyrinthe du Minotoror",
+        "id": "220628",
+        "pt": "Centro do Labirinto do Minotoror"
+      }
+    },
+    {
+      "id": 6,
+      "name": {
+        "de": "Unterschlupf des Schweinedrachens",
+        "en": "Dragon Pig's Den",
+        "es": "Antro del Dragocerdo",
+        "fr": "Antre du Dragon Cochon",
+        "id": "232658",
+        "pt": "Antro do Dragão-Porco"
+      }
+    },
+    {
+      "id": 7,
+      "name": {
+        "de": "Höhle von Crocabulia",
+        "en": "Crocabulia's Lair",
+        "es": "Antro de Cocabulia",
+        "fr": "Antre de Crocabulia",
+        "id": "802290",
+        "pt": "Antro de Crocabulia"
+      }
+    },
+    {
+      "id": 8,
+      "name": {
+        "de": "Scheune des Ausgehungerten Sonnenblümchens",
+        "en": "Famished Sunflower's Barn",
+        "es": "Granero del Girasol Hambriento",
+        "fr": "Grange du Tournesol Affamé",
+        "id": "752266",
+        "pt": "Granja do Girassol Faminto"
+      }
+    },
+    {
+      "id": 9,
+      "name": {
+        "de": "Ur-Gebiet",
+        "en": "Ancestral Domain",
+        "es": "Territorio Ancestral",
+        "fr": "Domaine Ancestral",
+        "id": "507470",
+        "pt": "Domínio Ancestral"
+      }
+    },
+    {
+      "id": 10,
+      "name": {
+        "de": "Weich-Eich-Lichtung",
+        "en": "Soft Oak Clearing",
+        "es": "Claro del Roble Blando",
+        "fr": "Clairière du Chêne Mou",
+        "id": "507472",
+        "pt": "Clareira do Carvalho Mole"
+      }
+    },
+    {
+      "id": 11,
+      "name": {
+        "de": "Blob-Felder",
+        "en": "Blop Fields",
+        "es": "Enclave de los Blops",
+        "fr": "Clos des Blops",
+        "id": "659094",
+        "pt": "Claustro dos Blops"
+      }
+    },
+    {
+      "id": 13,
+      "name": {
+        "de": "Bwork-Dungeon",
+        "en": "Bwork Dungeon",
+        "es": "Mazmorra de los Bworks",
+        "fr": "Donjon des Bworks",
+        "id": "220636",
+        "pt": "Calabouço dos Bworks"
+      }
+    },
+    {
+      "id": 14,
+      "name": {
+        "de": "Höhle des Bworkers",
+        "en": "Bworker's Cave",
+        "es": "Cueva de Bworker",
+        "fr": "Grotte du Bworker",
+        "id": "727405",
+        "pt": "Gruta do Bworker"
+      }
+    },
+    {
+      "id": 15,
+      "name": {
+        "de": "Unterschlupf des MuWulfs",
+        "en": "Moowolf Lair",
+        "es": "Guarida del Maxilubo",
+        "fr": "Tanière du Meulou",
+        "id": "725760",
+        "pt": "Toca do Mulobo"
+      }
+    },
+    {
+      "id": 17,
+      "name": {
+        "de": "Wa Wabbit Bau",
+        "en": "Wa Wabbit's Warren",
+        "es": "Madriguera del Wey Wabbit",
+        "fr": "Terrier du Wa Wabbit",
+        "id": "290061",
+        "pt": "Toca do Wei Wabbit"
+      }
+    },
+    {
+      "id": 18,
+      "name": {
+        "de": "Krachlerfelszacken",
+        "en": "Crackler's Rocky Peaks",
+        "es": "Picos Rocosos de los Crujidores",
+        "fr": "Pitons Rocheux des Craqueleurs",
+        "id": "659247",
+        "pt": "Picos Rochosos dos Smagadores"
+      }
+    },
+    {
+      "id": 19,
+      "name": {
+        "de": "Verzauberte Sandburg",
+        "en": "Sandy Castle",
+        "es": "Castillo de Arena",
+        "fr": "Château Ensablé",
+        "id": "751358",
+        "pt": "Castelo Arenoso"
+      }
+    },
+    {
+      "id": 21,
+      "name": {
+        "de": "Dungeon der Schattenschmiede",
+        "en": "Blacksmith Dungeon",
+        "es": "Mazmorra de los Herreros",
+        "fr": "Donjon des Forgerons",
+        "id": "220650",
+        "pt": "Calabouço dos Ferreiros"
+      }
+    },
+    {
+      "id": 22,
+      "name": {
+        "de": "Tempel des Großen Stinkelings",
+        "en": "Temple of the Great Ougaa",
+        "es": "Templo del Gran Ugah",
+        "fr": "Temple du Grand Ougah",
+        "id": "726568",
+        "pt": "Templo do Grande Ugah"
+      }
+    },
+    {
+      "id": 24,
+      "name": {
+        "de": "Gelee-Dimension",
+        "en": "Jellith Dimension",
+        "es": "La Gelexta Dimensión",
+        "fr": "Gelaxième Dimension",
+        "id": "220705",
+        "pt": "Gelatésima Dimensão"
+      }
+    },
+    {
+      "id": 25,
+      "name": {
+        "de": "Aggrotte",
+        "en": "Grotto Hesque",
+        "es": "Gruta Grut'Hesqua",
+        "fr": "Grotte Hesque",
+        "id": "220707",
+        "pt": "Gruta Hesca"
+      }
+    },
+    {
+      "id": 27,
+      "name": {
+        "de": "Kanniball-Dorf",
+        "en": "Kanniball Village",
+        "es": "Pueblo Kaníbola",
+        "fr": "Village Kanniboul",
+        "id": "557506",
+        "pt": "Vilarejo Kanibola"
+      }
+    },
+    {
+      "id": 28,
+      "name": {
+        "de": "Kimbo-Blätterdach",
+        "en": "Kimbo's Canopy",
+        "es": "Canopea del Kimbo",
+        "fr": "Canopée du Kimbo",
+        "id": "220623",
+        "pt": "Dossel do Kimbo"
+      }
+    },
+    {
+      "id": 30,
+      "name": {
+        "de": "Höhlen des Kuhlosses",
+        "en": "Koolich Cavern",
+        "es": "Cueva del Trankitronko",
+        "fr": "Caverne du Koulosse",
+        "id": "220626",
+        "pt": "Caverna do Tronkoso"
+      }
+    },
+    {
+      "id": 31,
+      "name": {
+        "de": "Höhle des Riesenkrakamors",
+        "en": "Lair of the Giant Kralove",
+        "es": "Antro del Kralamar Gigante",
+        "fr": "Antre du Kralamoure Géant",
+        "id": "220620",
+        "pt": "Antro do Kralamor Gigante"
+      }
+    },
+    {
+      "id": 32,
+      "name": {
+        "de": "Nest des Kwackataus",
+        "en": "The Kwakwa's Nest",
+        "es": "Nido de Kwoknan",
+        "fr": "Nid du Kwakwa",
+        "id": "94594",
+        "pt": "Ninho do Kwakwa"
+      }
+    },
+    {
+      "id": 33,
+      "name": {
+        "de": "Larven-Dungeon",
+        "en": "Larva Dungeon",
+        "es": "Mazmorra de las Larvas",
+        "fr": "Donjon des Larves",
+        "id": "220652",
+        "pt": "Calabouço das Larvas"
+      }
+    },
+    {
+      "id": 34,
+      "name": {
+        "de": "Geisterhaus",
+        "en": "Haunted House",
+        "es": "Mansión Encantada",
+        "fr": "Maison Fantôme",
+        "id": "94596",
+        "pt": "Casa Fantasma"
+      }
+    },
+    {
+      "id": 35,
+      "name": {
+        "de": "Brumen Tinctorias Laboratorium",
+        "en": "Brumen Tinctorias's LaboRATory",
+        "es": "Laboratorio de Brumen Tinctorias",
+        "fr": "Laboratoire de Brumen Tinctorias",
+        "id": "220709",
+        "pt": "Laboratório de Brumen Tinctorias"
+      }
+    },
+    {
+      "id": 36,
+      "name": {
+        "de": "Weißnachtsdungeon",
+        "en": "Kwismas Dungeon",
+        "es": "Mazmorra de Nawidad",
+        "fr": "Donjon de Nowel",
+        "id": "220632",
+        "pt": "Calabouço de Nataw"
+      }
+    },
+    {
+      "id": 37,
+      "name": {
+        "de": "Weißnachtshöhle",
+        "en": "Kwismas Cavern",
+        "es": "Cueva de Nawidad",
+        "fr": "Caverne de Nowel",
+        "id": "220624",
+        "pt": "Caverna de Nataw"
+      }
+    },
+    {
+      "id": 38,
+      "name": {
+        "de": "Haus des Weißnachtsmannes",
+        "en": "Father Kwismas's House",
+        "es": "Casa de Chanta Klaus",
+        "fr": "Maison du Papa Nowel",
+        "id": "94600",
+        "pt": "Casa do Papai Nowel"
+      }
+    },
+    {
+      "id": 39,
+      "name": {
+        "de": "Bilge von Otomaïs Arche",
+        "en": "Hold of Otomai's Ark",
+        "es": "Cala del Arca de Otomai",
+        "fr": "Cale de l'Arche d'Otomaï",
+        "id": "220622",
+        "pt": "Porão da Arca de Otomai"
+      }
+    },
+    {
+      "id": 41,
+      "name": {
+        "de": "Shilf-Engpass",
+        "en": "Bherb's Gully",
+        "es": "Boca del Rasgabola",
+        "fr": "Goulet du Rasboul",
+        "id": "220706",
+        "pt": "Canal do Rasgabola"
+      }
+    },
+    {
+      "id": 42,
+      "name": {
+        "de": "Vorratskammer der Weißen Ratte",
+        "en": "White Rat's Pantry",
+        "es": "Despensa de la Rata Blanca",
+        "fr": "Garde-manger du Rat Blanc",
+        "id": "925278",
+        "pt": "Despensa do Rato Branco"
+      }
+    },
+    {
+      "id": 43,
+      "name": {
+        "de": "Hausmausefalle der Schwarzen Ratte",
+        "en": "Black Rat's Moumousetrap",
+        "es": "Raratonera de la Rata Negra",
+        "fr": "Sousouricière du Rat Noir",
+        "id": "925277",
+        "pt": "Armadilha para Cacamundongo do Rato Negro - Sexta sala"
+      }
+    },
+    {
+      "id": 44,
+      "name": {
+        "de": "Unterschlupf des Sphincter Cell",
+        "en": "Sphincter Cell's Lair",
+        "es": "Guarida de Sfinter Cell",
+        "fr": "Repaire de Sphincter Cell",
+        "id": "967396",
+        "pt": "Esconderijo de Sphincter Cell"
+      }
+    },
+    {
+      "id": 45,
+      "name": {
+        "de": "Scarablatt-Dungeon",
+        "en": "Scaraleaf Dungeon",
+        "es": "Mazmorra de los Escarahojas",
+        "fr": "Donjon des Scarafeuilles",
+        "id": "220656",
+        "pt": "Calabouço dos Scarafolhas"
+      }
+    },
+    {
+      "id": 46,
+      "name": {
+        "de": "Unterschlupf des Skeunks",
+        "en": "Skeunk's Hideout",
+        "es": "Guarida de Skonk",
+        "fr": "Repaire de Skeunk",
+        "id": "94588",
+        "pt": "Toca do Skonk"
+      }
+    },
+    {
+      "id": 47,
+      "name": {
+        "de": "Dungeon der Skelette",
+        "en": "Skeleton Dungeon",
+        "es": "Mazmorra de los Esqueletos",
+        "fr": "Donjon des Squelettes",
+        "id": "220657",
+        "pt": "Calabouço dos Skeletos"
+      }
+    },
+    {
+      "id": 48,
+      "name": {
+        "de": "Tofu-Dungeon",
+        "en": "Tofu House",
+        "es": "Mazmorra de los Tofus",
+        "fr": "Donjon des Tofus",
+        "id": "220658",
+        "pt": "Calabouço dos Tofus"
+      }
+    },
+    {
+      "id": 49,
+      "name": {
+        "de": "Unterschlupf des Königlichen Multiblobs",
+        "en": "Royal Rainbow Blop Lair",
+        "es": "Antro del Blop Multicolor Real",
+        "fr": "Antre du Blop Multicolore Royal",
+        "id": "220617",
+        "pt": "Antro do Blop Arco-íris Real"
+      }
+    },
+    {
+      "id": 50,
+      "name": {
+        "de": "Königlicher Tofustall",
+        "en": "Royal Tofu House",
+        "es": "Tofullinero Real",
+        "fr": "Tofulailler Royal",
+        "id": "150238",
+        "pt": "Tofuleiro Real"
+      }
+    },
+    {
+      "id": 51,
+      "name": {
+        "de": "Tynrils Laboratorium",
+        "en": "Tynril Lab",
+        "es": "Laboratorio del Tynril",
+        "fr": "Laboratoire du Tynril",
+        "id": "140357",
+        "pt": "Laboratório do Tynril"
+      }
+    },
+    {
+      "id": 52,
+      "name": {
+        "de": "Schloss des Wa Wabbits",
+        "en": "Wa Wabbit's Castle",
+        "es": "Castillo del Wey Wabbit",
+        "fr": "Château du Wa Wabbit",
+        "id": "285400",
+        "pt": "Castelo do Wei Wabbit"
+      }
+    },
+    {
+      "id": 53,
+      "name": {
+        "de": "Minotot-Raum",
+        "en": "Minotot Room",
+        "es": "Sala del Minotot",
+        "fr": "Salle du Minotot",
+        "id": "141203",
+        "pt": "Sala do Minotot"
+      }
+    },
+    {
+      "id": 54,
+      "name": {
+        "de": "Gewächshaus des Königlichen Fressmuts",
+        "en": "Royal Mastogob's Greenhouse",
+        "es": "Invernáculo de Jalamut Real",
+        "fr": "Serre du Royalmouth",
+        "id": "94625",
+        "pt": "Estufa do Papamute Real"
+      }
+    },
+    {
+      "id": 55,
+      "name": {
+        "de": "King Ping Grotte",
+        "en": "Royal Pingwin's Excavation",
+        "es": "Excavación de Morsagüino Real",
+        "fr": "Excavation du Mansot Royal",
+        "id": "220704",
+        "pt": "Escavação do Pingwin Real"
+      }
+    },
+    {
+      "id": 56,
+      "name": {
+        "de": "Wrack der Black Rogg",
+        "en": "The Wreck of the Hesperus",
+        "es": "Restos del Roca Negra",
+        "fr": "Épave du Grolandais violent",
+        "id": "757204",
+        "pt": "Destroços do Ogrolandês Avoado"
+      }
+    },
+    {
+      "id": 57,
+      "name": {
+        "de": "Grabgewölbe der Obsidianter",
+        "en": "The Obsidemon's Hypogeum",
+        "es": "Hipogeo del Obsidiantre",
+        "fr": "Hypogée de l'Obsidiantre",
+        "id": "220708",
+        "pt": "Hipogeu do Obsidemônio"
+      }
+    },
+    {
+      "id": 58,
+      "name": {
+        "de": "Der Eisfuxbau",
+        "en": "Snowfoux Den",
+        "es": "Guarida de los Gélifux",
+        "fr": "Tanière Givrefoux",
+        "id": "194798",
+        "pt": "Toca Gelifox"
+      }
+    },
+    {
+      "id": 59,
+      "name": {
+        "de": "Unterschlupf des Korrianders",
+        "en": "Korriander's Lair",
+        "es": "Antro del Cil",
+        "fr": "Antre du Korriandre",
+        "id": "220619",
+        "pt": "Antro do Kwentro"
+      }
+    }
+  ]
+}

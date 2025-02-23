@@ -1,7 +1,8 @@
 package domain
 
 const (
-	SitemapFile = "sitemap.json"
-	QuestsFile  = "quests.json"
-	TitlesFile  = "titles.json"
+	DungeonsFile = "dungeons.json"
+	QuestsFile   = "quests.json"
+	SitemapFile  = "sitemap.json"
+	TitlesFile   = "titles.json"
 )

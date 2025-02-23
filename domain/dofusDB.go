@@ -10,17 +10,22 @@ var (
 	regexAlignmentLevel = regexp.MustCompile(`Pa=(\d+)`)
 )
 
-type DofusDbSearchQuest struct {
-	Total int                 `json:"total"`
-	Limit int                 `json:"limit"`
-	Skip  int                 `json:"skip"`
-	Data  []DofusDbQuestLight `json:"data"`
+type DofusDbSearchResource[T any] struct {
+	Total int `json:"total"`
+	Limit int `json:"limit"`
+	Skip  int `json:"skip"`
+	Data  []T `json:"data"`
 }
 
 type DofusDbQuestLight struct {
 	ID             int               `json:"id"`
 	Name           map[string]string `json:"name"`
 	StartCriterion string            `json:"startCriterion"`
+}
+
+type DofusDbDungeonLight struct {
+	ID   int               `json:"id"`
+	Name map[string]string `json:"name"`
 }
 
 func (q *DofusDbQuestLight) IsAlignment() bool {

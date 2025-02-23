@@ -68,24 +68,24 @@ func LoadSitemap() (*domain.DofusNoobsRemoteSitemap, error) {
 	return sitemap, nil
 }
 
-func LoadQuests() (*domain.DofusDbSearchQuest, error) {
-	var quests *domain.DofusDbSearchQuest
-	if internal.FileExists(domain.QuestsFile) {
-		fmt.Println("Loading questsFile from cache")
-		bodyFile, err := os.ReadFile(domain.QuestsFile)
+func LoadDofusDbResources[T any](resourceType string, cacheFile string, getFunc func() (*domain.DofusDbSearchResource[T], error)) (*domain.DofusDbSearchResource[T], error) {
+	var resources *domain.DofusDbSearchResource[T]
+	if internal.FileExists(cacheFile) {
+		fmt.Printf("Loading %s from cache\n", resourceType)
+		bodyFile, err := os.ReadFile(cacheFile)
 		if err != nil {
-			log.Fatalf("LoadQuests: %v", err)
+			log.Fatalf("%s: %v", resourceType, err)
 		}
-		if err = json.Unmarshal(bodyFile, &quests); err != nil {
+		if err = json.Unmarshal(bodyFile, &resources); err != nil {
 			return nil, err
 		}
-		return quests, nil
+		return resources, nil
 	}
 
-	quests, err := HttpClient.RequestDofusApiAllQuests()
+	resources, err := getFunc()
 	if err != nil {
-		log.Fatalf("RequestDofusApiAllQuests: %v", err)
+		log.Fatalf("RequestDofusApiAllResources (%s): %v", resourceType, err)
 	}
-	internal.WriteToFile(domain.QuestsFile, quests, true, false)
-	return quests, nil
+	internal.WriteToFile(cacheFile, resources, true, false)
+	return resources, nil
 }

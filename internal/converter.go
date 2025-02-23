@@ -1,7 +1,6 @@
 package internal
 
 import (
-	"DofusNoobsIdentifierOffline/domain"
 	"fmt"
 	"github.com/adrg/strutil"
 	"github.com/adrg/strutil/metrics"
@@ -61,8 +60,7 @@ func skipQuest(target string) bool {
 	return strings.HasPrefix(target, "offrande à ") || strings.HasPrefix(target, "chasse au dopeul ")
 }
 
-func GetLocationFromTarget(titles map[string]string, quest domain.DofusDbQuestLight) (string, string, string) {
-	targetKey := quest.Name["fr"]
+func GetLocationFromTarget(titles map[string]string, targetKey string) (string, string, string) {
 	targetFormatted := formatTarget(formatGeneral(targetKey))
 	if skipQuest(targetFormatted) {
 		return "[SKIPPED] Offrande ou Chasse au Dopeul", "skipped", ""
