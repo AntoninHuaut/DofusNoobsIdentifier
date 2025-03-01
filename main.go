@@ -11,13 +11,14 @@ import (
 	"strings"
 )
 
-const (
-	questsKey   = "quest"
-	dungeonsKey = "dungeon"
-)
-
 func main() {
 	boot.LoadEnv()
+	manualConf, err := boot.LoadConf()
+	if err != nil {
+		log.Fatalf("LoadConf: %v", err)
+	}
+	fmt.Printf("Manual configuration loaded: %+v\n", manualConf)
+
 	boot.LoadClient()
 	sitemap, err := boot.LoadSitemap()
 	if err != nil {
@@ -25,13 +26,13 @@ func main() {
 	}
 	fmt.Println("Total urls:", len(sitemap.Urls))
 
-	quests, err := boot.LoadDofusDbResources[domain.DofusDbQuestLight](questsKey, domain.QuestsFile, boot.HttpClient.RequestDofusApiAllQuests)
+	quests, err := boot.LoadDofusDbResources[domain.DofusDbQuestLight](domain.QuestsKey, domain.QuestsFile, boot.HttpClient.RequestDofusApiAllQuests)
 	if err != nil {
 		log.Fatalf("LoadQuests: %v", err)
 	}
 	fmt.Println("Total quests:", len(quests.Data))
 
-	dungeons, err := boot.LoadDofusDbResources[domain.DofusDbDungeonLight](dungeonsKey, domain.DungeonsFile, boot.HttpClient.RequestDofusApiAllDungeons)
+	dungeons, err := boot.LoadDofusDbResources[domain.DofusDbDungeonLight](domain.DungeonsKey, domain.DungeonsFile, boot.HttpClient.RequestDofusApiAllDungeons)
 	if err != nil {
 		log.Fatalf("LoadDungeons: %v", err)
 	}
@@ -43,17 +44,26 @@ func main() {
 	}
 	fmt.Println("Total titles:", len(titles))
 
-	logs := make(map[string][]string)         // map[resourceType][]logs
-	output := make(map[string]map[int]string) // map[resourceType]map[resourceId]dofusNoobsUrl
-	initKey := func(key string) {
+	logs := make(map[domain.TypeKey][]string)         // map[resourceType][]logs
+	output := make(map[domain.TypeKey]map[int]string) // map[resourceType]map[resourceId]dofusNoobsUrl
+	initKey := func(key domain.TypeKey) {
 		logs[key] = make([]string, 0)
 		output[key] = make(map[int]string)
 	}
-	initKey(questsKey)
-	initKey(dungeonsKey)
+	initKey(domain.QuestsKey)
+	initKey(domain.DungeonsKey)
 
-	resolveKey := func(key string, name string, id int) {
-		location, similarity, locLog := internal.GetLocationFromTarget(titles, name)
+	resolveKey := func(key domain.TypeKey, name string, id int) {
+		formattedName := manualConf.RewriteTarget(key, internal.FormatGeneral(name))
+		if manualConf.GetIfUnmapped(key, id) {
+			return
+		}
+		if url, ok := manualConf.GetIfRemapped(key, id, formattedName); ok {
+			output[key][id] = url
+			return
+		}
+
+		location, similarity, locLog := internal.GetLocationFromTarget(id, titles, name, formattedName)
 
 		similarityNb, convertErr := strconv.ParseFloat(similarity, 64)
 		if locLog != "" && ((convertErr == nil && similarityNb < 0.9) || similarity == "prefixOrSuffix") {
@@ -61,20 +71,21 @@ func main() {
 		}
 		output[key][id] = location
 	}
-	logKey := func(key string) {
+	logKey := func(key domain.TypeKey) {
 		slices.Sort(logs[key])
+		logs[key] = append([]string{internal.FormatLog("Similarity", "DofusDB ID", "DofusDB Title", "DofusNoobs Title", "DofusNoobs URL")}, logs[key]...)
 		internal.WriteToFile(fmt.Sprintf("logs_%s.txt", key), strings.Join(logs[key], ""), false, true)
 	}
 
 	for _, quest := range quests.Data {
-		resolveKey(questsKey, quest.Name["fr"], quest.ID)
+		resolveKey(domain.QuestsKey, quest.Name["fr"], quest.ID)
 	}
-	logKey(questsKey)
+	logKey(domain.QuestsKey)
 
 	for _, dungeon := range dungeons.Data {
-		resolveKey(dungeonsKey, dungeon.Name["fr"], dungeon.ID)
+		resolveKey(domain.DungeonsKey, dungeon.Name["fr"], dungeon.ID)
 	}
-	logKey(dungeonsKey)
+	logKey(domain.DungeonsKey)
 
 	internal.WriteToFile("mapping.json", output, false, false)
 	internal.WriteToFile("mapping_formatted.json", output, true, false)

@@ -1,0 +1,79 @@
+dungeons:
+  unmapped_id:
+    - 96 # "temple maudit d'araknas"
+    - 44 # "repaire de sphincter cell"
+  remapped_id:
+    73: "https://www.dofuspourlesnoobs.com/aquadocircme-de-merkator.html"
+  remapped_prefix: {}
+  rewrite_target: []
+
+quests:
+  unmapped_id:
+    - 648 # "qpvsrvpj ubou ef ibjof ?"
+    - 1298 # "trop sinistre"
+    - 2462 # "altéré go "
+    - 1064 # "contrôles anti-baston"
+    - 272 # "assassinat effectué"
+    - 1459 # "maîtrise en flanquage de rouste"
+    - 229 # "le déguisement du koalak"
+    - 143 # "allez hue !"
+    - 470 # "un bon gros par dix-neuf"
+    - 1062 # "vols à la charrette"
+    - 679 # "les indésirables"
+    - 1066 # "retour en avant"
+    - 1419 # "bon comme du bon pain"
+    - 1460 # "doctorat en bottage de fesses"
+    - 1457 # "apprentissage en tirage d'oreilles"
+    - 494 # "le grand manitou"
+    - 2047 # "chasse au trésor des pirates"
+    - 1458 # "licence en distribution de pains"
+    - 630 # "on recherche le comte harebourg"
+    - 1930 # "on recherche le sans visage"
+    - 1837 # "on recherche ka'youloud"
+    - 662 # "cinquième postag"
+    - 670 # "treizième postage"
+    - 875 # "l'étoile de l'atelier"
+    - 1894 # "le faux-cul"
+    - 671 # "quatorzième postage"
+    - 668 # "onzième postage"
+  remapped_id: {}
+  remapped_prefix:
+    "offrande à ": "https://www.dofuspourlesnoobs.com/calendrier-de-lalmanax.html"
+    "chasse au dopeul ": "https://www.dofuspourlesnoobs.com/chemin-optimal--dopeuls.html"
+  rewrite_target:
+    - from_suffix: "touriste"
+      to_suffix: "touriste/amateur/spécialiste/expert"
+      group: "generic_suffix"
+      condition: {}
+    - from_suffix: "amateur"
+      to_suffix: "touriste/amateur/spécialiste/expert"
+      group: "generic_suffix"
+      condition: {}
+    - from_suffix: "spécialiste"
+      to_suffix: "touriste/amateur/spécialiste/expert"
+      group: "generic_suffix"
+      condition: {}
+    - from_suffix: "expert"
+      to_suffix: "touriste/amateur/spécialiste/expert"
+      group: "generic_suffix"
+      condition: {}
+    - from_suffix: "juvéniles"
+      to_suffix: "juvéniles/novices/matures/vénérables"
+      group: "krokilles_suffix"
+      condition:
+        has_prefix: "gare aux krokilles"
+    - from_suffix: "novices"
+      to_suffix: "juvéniles/novices/matures/vénérables"
+      group: "krokilles_suffix"
+      condition:
+        has_prefix: "gare aux krokilles"
+    - from_suffix: "matures"
+      to_suffix: "juvéniles/novices/matures/vénérables"
+      group: "krokilles_suffix"
+      condition:
+        has_prefix: "gare aux krokilles"
+    - from_suffix: "vénérables"
+      to_suffix: "juvéniles/novices/matures/vénérables"
+      group: "krokilles_suffix"
+      condition:
+        has_prefix: "gare aux krokilles"

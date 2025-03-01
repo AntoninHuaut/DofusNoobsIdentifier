@@ -68,7 +68,7 @@ func LoadSitemap() (*domain.DofusNoobsRemoteSitemap, error) {
 	return sitemap, nil
 }
 
-func LoadDofusDbResources[T any](resourceType string, cacheFile string, getFunc func() (*domain.DofusDbSearchResource[T], error)) (*domain.DofusDbSearchResource[T], error) {
+func LoadDofusDbResources[T any](resourceType domain.TypeKey, cacheFile string, getFunc func() (*domain.DofusDbSearchResource[T], error)) (*domain.DofusDbSearchResource[T], error) {
 	var resources *domain.DofusDbSearchResource[T]
 	if internal.FileExists(cacheFile) {
 		fmt.Printf("Loading %s from cache\n", resourceType)
