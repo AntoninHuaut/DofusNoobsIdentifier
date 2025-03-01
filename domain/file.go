@@ -35,9 +35,6 @@ type ManuelRewriteTarget struct {
 	FromSuffix string `yaml:"from_suffix"`
 	ToSuffix   string `yaml:"to_suffix"`
 	Group      string `yaml:"group"` // Only one rewrite target per group will be applied
-	Condition  struct {
-		HasPrefix string `yaml:"has_prefix"`
-	} `yaml:"condition"`
 }
 
 func (mf *ManualFile) GetIfRemapped(key TypeKey, id int, title string) (string, bool) {
@@ -81,15 +78,8 @@ func (mf *ManualFile) RewriteTarget(key TypeKey, target string) string {
 				continue
 			}
 			if len(rewriteTarget.FromSuffix) > 0 && strings.HasSuffix(target, rewriteTarget.FromSuffix) {
-				meetCondition := true
-				if len(rewriteTarget.Condition.HasPrefix) > 0 && !strings.HasPrefix(target, rewriteTarget.Condition.HasPrefix) {
-					meetCondition = false
-					break
-				}
-				if meetCondition {
-					target = strings.ReplaceAll(target, rewriteTarget.FromSuffix, rewriteTarget.ToSuffix)
-					appliedGroups = append(appliedGroups, rewriteTarget.Group)
-				}
+				target = strings.ReplaceAll(target, rewriteTarget.FromSuffix, rewriteTarget.ToSuffix)
+				appliedGroups = append(appliedGroups, rewriteTarget.Group)
 			}
 		}
 		return target

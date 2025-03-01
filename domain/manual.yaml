@@ -36,7 +36,11 @@ quests:
     - 1894 # "le faux-cul"
     - 671 # "quatorzième postage"
     - 668 # "onzième postage"
-  remapped_id: {}
+  remapped_id:
+    930: "https://www.dofuspourlesnoobs.com/gare-aux-krokilles-juveacutenilesnovicesmaturesveacuteneacuterables.html"
+    931: "https://www.dofuspourlesnoobs.com/gare-aux-krokilles-juveacutenilesnovicesmaturesveacuteneacuterables.html"
+    932: "https://www.dofuspourlesnoobs.com/gare-aux-krokilles-juveacutenilesnovicesmaturesveacuteneacuterables.html"
+    933: "https://www.dofuspourlesnoobs.com/gare-aux-krokilles-juveacutenilesnovicesmaturesveacuteneacuterables.html"
   remapped_prefix:
     "offrande à ": "https://www.dofuspourlesnoobs.com/calendrier-de-lalmanax.html"
     "chasse au dopeul ": "https://www.dofuspourlesnoobs.com/chemin-optimal--dopeuls.html"
@@ -44,36 +48,12 @@ quests:
     - from_suffix: "touriste"
       to_suffix: "touriste/amateur/spécialiste/expert"
       group: "generic_suffix"
-      condition: {}
     - from_suffix: "amateur"
       to_suffix: "touriste/amateur/spécialiste/expert"
       group: "generic_suffix"
-      condition: {}
     - from_suffix: "spécialiste"
       to_suffix: "touriste/amateur/spécialiste/expert"
       group: "generic_suffix"
-      condition: {}
     - from_suffix: "expert"
       to_suffix: "touriste/amateur/spécialiste/expert"
       group: "generic_suffix"
-      condition: {}
-    - from_suffix: "juvéniles"
-      to_suffix: "juvéniles/novices/matures/vénérables"
-      group: "krokilles_suffix"
-      condition:
-        has_prefix: "gare aux krokilles"
-    - from_suffix: "novices"
-      to_suffix: "juvéniles/novices/matures/vénérables"
-      group: "krokilles_suffix"
-      condition:
-        has_prefix: "gare aux krokilles"
-    - from_suffix: "matures"
-      to_suffix: "juvéniles/novices/matures/vénérables"
-      group: "krokilles_suffix"
-      condition:
-        has_prefix: "gare aux krokilles"
-    - from_suffix: "vénérables"
-      to_suffix: "juvéniles/novices/matures/vénérables"
-      group: "krokilles_suffix"
-      condition:
-        has_prefix: "gare aux krokilles"
