@@ -71,7 +71,7 @@ func (mf *ManualFile) GetIfUnmapped(key TypeKey, id int) bool {
 }
 
 func (mf *ManualFile) RewriteTarget(key TypeKey, target string) string {
-	checkIfRewriteTarget := func(rewriteTargets []ManuelRewriteTarget, target string) string {
+	applyRewriteTarget := func(rewriteTargets []ManuelRewriteTarget, target string) string {
 		var appliedGroups []string
 		for _, rewriteTarget := range rewriteTargets {
 			if slices.Contains(appliedGroups, rewriteTarget.Group) {
@@ -86,9 +86,9 @@ func (mf *ManualFile) RewriteTarget(key TypeKey, target string) string {
 	}
 
 	if key == QuestsKey {
-		return checkIfRewriteTarget(mf.Quests.RewriteTarget, target)
+		return applyRewriteTarget(mf.Quests.RewriteTarget, target)
 	} else if key == DungeonsKey {
-		return checkIfRewriteTarget(mf.Dungeons.RewriteTarget, target)
+		return applyRewriteTarget(mf.Dungeons.RewriteTarget, target)
 	}
 	return target
 }
