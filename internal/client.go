@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"os"
 	"regexp"
+	"sort"
 	"strings"
 	"time"
 )
@@ -24,8 +25,8 @@ var (
 )
 
 type HttpClient interface {
-	RequestDofusApiAllQuests() (*domain.DofusDbSearchResource[domain.DofusDbQuestLight], error)
 	RequestDofusApiAllDungeons() (*domain.DofusDbSearchResource[domain.DofusDbDungeonLight], error)
+	RequestDofusApiAllQuests() (*domain.DofusDbSearchResource[domain.DofusDbQuestLight], error)
 	RequestDofusSitemap() ([]byte, error)
 	GetPageTitleDofusNoobs(initMaps map[string]string, url []domain.DofusNoobsRemoteSitemapUrl) (map[string]string, error)
 }
@@ -39,7 +40,7 @@ func NewHttpClient(dofusApiUrl string, dofusNoobsUrl string) HttpClient {
 	return &httpClient{dofusApiUrl: dofusApiUrl, dofusNoobsUrl: dofusNoobsUrl}
 }
 
-func (h *httpClient) GetPageTitleDofusNoobs(resTitles map[string]string, urls []domain.DofusNoobsRemoteSitemapUrl) (map[string]string, error) {
+func (h *httpClient) GetPageTitleDofusNoobs(requestTitles map[string]string, urls []domain.DofusNoobsRemoteSitemapUrl) (map[string]string, error) {
 	type urlMapped struct {
 		URL   string
 		Title string
@@ -47,6 +48,11 @@ func (h *httpClient) GetPageTitleDofusNoobs(resTitles map[string]string, urls []
 
 	resultCh := make(chan urlMapped, dofusNoobsParallelRequests)
 	errCh := make(chan error, dofusNoobsParallelRequests)
+
+	responseTitles := make(map[string]string)
+	for k, v := range requestTitles {
+		responseTitles[k] = v
+	}
 
 	makeRequest := func(url string) {
 		body, err := request(url)
@@ -85,13 +91,14 @@ func (h *httpClient) GetPageTitleDofusNoobs(resTitles map[string]string, urls []
 			select {
 			case mappedRes := <-resultCh:
 				currentIndex++
-				resTitles[mappedRes.URL] = mappedRes.Title
+				responseTitles[mappedRes.URL] = mappedRes.Title
 
-				jsonMap, err := json.MarshalIndent(resTitles, "", "  ")
+				// Write to file to avoid losing data
+				jsonMap, err := json.MarshalIndent(responseTitles, "", "  ")
 				if err != nil {
 					return nil, err
 				}
-				if err = os.WriteFile(domain.TitlesFile, jsonMap, 0644); err != nil {
+				if err = os.WriteFile(GetStorageFilePath(domain.TitlesFile), jsonMap, 0644); err != nil {
 					return nil, err
 				}
 			case err := <-errCh:
@@ -103,18 +110,18 @@ func (h *httpClient) GetPageTitleDofusNoobs(resTitles map[string]string, urls []
 	close(resultCh)
 	close(errCh)
 
-	return resTitles, nil
-}
-
-func (h *httpClient) RequestDofusApiAllQuests() (*domain.DofusDbSearchResource[domain.DofusDbQuestLight], error) {
-	return RequestDofusApiAllResources[domain.DofusDbQuestLight](h.dofusApiUrl, "quests")
+	return responseTitles, nil
 }
 
 func (h *httpClient) RequestDofusApiAllDungeons() (*domain.DofusDbSearchResource[domain.DofusDbDungeonLight], error) {
 	return RequestDofusApiAllResources[domain.DofusDbDungeonLight](h.dofusApiUrl, "dungeons")
 }
 
-func RequestDofusApiAllResources[T any](dofusApiUrl string, path string) (*domain.DofusDbSearchResource[T], error) {
+func (h *httpClient) RequestDofusApiAllQuests() (*domain.DofusDbSearchResource[domain.DofusDbQuestLight], error) {
+	return RequestDofusApiAllResources[domain.DofusDbQuestLight](h.dofusApiUrl, "quests")
+}
+
+func RequestDofusApiAllResources[T domain.HasID](dofusApiUrl string, path string) (*domain.DofusDbSearchResource[T], error) {
 	resources := &domain.DofusDbSearchResource[T]{
 		Limit: 50,
 	}
@@ -166,6 +173,10 @@ func RequestDofusApiAllResources[T any](dofusApiUrl string, path string) (*domai
 
 	close(resultCh)
 	close(errCh)
+
+	sort.Slice(resources.Data, func(i, j int) bool {
+		return resources.Data[i].GetID() < resources.Data[j].GetID()
+	})
 
 	return resources, nil
 }

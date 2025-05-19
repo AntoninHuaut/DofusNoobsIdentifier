@@ -6,10 +6,12 @@ import (
 )
 
 const (
-	DungeonsFile = "dungeons.json"
-	QuestsFile   = "quests.json"
-	SitemapFile  = "sitemap.json"
-	TitlesFile   = "titles.json"
+	StorageDir = "storage"
+
+	DungeonsFile = "cache_dungeons.json"
+	QuestsFile   = "cache_quests.json"
+	SitemapFile  = "cache_sitemap.json"
+	TitlesFile   = "cache_titles.json"
 )
 
 type TypeKey string

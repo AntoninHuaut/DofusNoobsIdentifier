@@ -74,7 +74,7 @@ func main() {
 	logKey := func(key domain.TypeKey) {
 		slices.Sort(logs[key])
 		logs[key] = append([]string{internal.FormatLog("Similarity", "DofusDB ID", "DofusDB Title", "DofusNoobs Title", "DofusNoobs URL")}, logs[key]...)
-		internal.WriteToFile(fmt.Sprintf("logs_%s.txt", key), strings.Join(logs[key], ""), false, true)
+		internal.WriteToFile(internal.GetStorageFilePath(fmt.Sprintf("log_%s.txt", key)), strings.Join(logs[key], ""), false, true)
 	}
 
 	for _, quest := range quests.Data {
@@ -87,6 +87,7 @@ func main() {
 	}
 	logKey(domain.DungeonsKey)
 
-	internal.WriteToFile("mapping.json", output, false, false)
-	internal.WriteToFile("mapping_formatted.json", output, true, false)
+	internal.WriteToFile("mapping.json", output, false, false) // Keep previous path to compatibility with browser extension
+	internal.WriteToFile(internal.GetStorageFilePath("mapping.json"), output, false, false)
+	internal.WriteToFile(internal.GetStorageFilePath("mapping_formatted.json"), output, true, false)
 }

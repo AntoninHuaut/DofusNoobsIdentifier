@@ -3,4 +3,4 @@
       0.565217 |         39 |                                    cale de l'arche d'otomaï |                                               arche d'otomaï (-> https://www.dofuspourlesnoobs.com/arche-dotomaiuml.html)
       0.681818 |         77 |                                       fabrique de malléfisk |                                           fabrique mallefisk (-> https://www.dofuspourlesnoobs.com/fabrique-mallefisk.html)
       0.840000 |        121 |                                    tempête de l'eliocalypse |                                     tempête de l’eliocalypse (-> https://www.dofuspourlesnoobs.com/tempete-de-l-eliocalypse.html)
-      0.866667 |        149 |                               bibliothèque du maître corbac |                                bibliothèque du maitre corbac (-> https://www.dofuspourlesnoobs.com/bibliotheque-du-maitre-corbac.html)
+      0.866667 |          3 |                               bibliothèque du maître corbac |                                bibliothèque du maitre corbac (-> https://www.dofuspourlesnoobs.com/bibliotheque-du-maitre-corbac.html)

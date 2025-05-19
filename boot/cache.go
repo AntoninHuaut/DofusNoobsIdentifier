@@ -12,9 +12,10 @@ import (
 
 func LoadTitles(urls []domain.DofusNoobsRemoteSitemapUrl) (map[string]string, error) {
 	var titles map[string]string
-	if internal.FileExists(domain.TitlesFile) {
+	cacheFile := internal.GetStorageFilePath(domain.TitlesFile)
+	if internal.IsFileExists(cacheFile) {
 		fmt.Println("Loading titles from cache")
-		bodyFile, err := os.ReadFile(domain.TitlesFile)
+		bodyFile, err := os.ReadFile(cacheFile)
 		if err != nil {
 			log.Fatalf("LoadTitles: %v", err)
 		}
@@ -23,33 +24,34 @@ func LoadTitles(urls []domain.DofusNoobsRemoteSitemapUrl) (map[string]string, er
 		}
 	}
 
-	var urlsFiltered []domain.DofusNoobsRemoteSitemapUrl
-	initMaps := make(map[string]string)
+	var missingUrls []domain.DofusNoobsRemoteSitemapUrl
+	initTitles := make(map[string]string)
 	for _, url := range urls {
 		if _, ok := titles[url.Loc]; !ok {
-			urlsFiltered = append(urlsFiltered, url)
+			missingUrls = append(missingUrls, url)
 		} else {
-			initMaps[url.Loc] = titles[url.Loc]
+			initTitles[url.Loc] = titles[url.Loc]
 		}
 	}
 
-	if len(urlsFiltered) > 0 {
-		fmt.Printf("Fetching %d missing titles entries\n", len(urlsFiltered))
+	if len(missingUrls) > 0 {
+		fmt.Printf("Fetching %d missing titles entries\n", len(missingUrls))
 	}
-	
-	titles, err := HttpClient.GetPageTitleDofusNoobs(initMaps, urlsFiltered)
+
+	titles, err := HttpClient.GetPageTitleDofusNoobs(initTitles, missingUrls)
 	if err != nil {
 		log.Fatalf("GetPageTitleDofusNoobs: %v", err)
 	}
-	internal.WriteToFile(domain.TitlesFile, titles, true, false)
+	internal.WriteToFile(cacheFile, titles, true, false)
 	return titles, nil
 }
 
 func LoadSitemap() (*domain.DofusNoobsRemoteSitemap, error) {
 	var sitemap *domain.DofusNoobsRemoteSitemap
-	if internal.FileExists(domain.SitemapFile) {
+	cacheFile := internal.GetStorageFilePath(domain.SitemapFile)
+	if internal.IsFileExists(cacheFile) {
 		fmt.Println("Loading sitemap from cache")
-		bodyFile, err := os.ReadFile(domain.SitemapFile)
+		bodyFile, err := os.ReadFile(cacheFile)
 		if err != nil {
 			log.Fatalf("LoadSitemap: %v", err)
 		}
@@ -68,13 +70,14 @@ func LoadSitemap() (*domain.DofusNoobsRemoteSitemap, error) {
 		return nil, err
 	}
 
-	internal.WriteToFile(domain.SitemapFile, sitemap, true, false)
+	internal.WriteToFile(cacheFile, sitemap, true, false)
 	return sitemap, nil
 }
 
-func LoadDofusDbResources[T any](resourceType domain.TypeKey, cacheFile string, getFunc func() (*domain.DofusDbSearchResource[T], error)) (*domain.DofusDbSearchResource[T], error) {
+func LoadDofusDbResources[T any](resourceType domain.TypeKey, cacheFileName string, getFunc func() (*domain.DofusDbSearchResource[T], error)) (*domain.DofusDbSearchResource[T], error) {
 	var resources *domain.DofusDbSearchResource[T]
-	if internal.FileExists(cacheFile) {
+	cacheFile := internal.GetStorageFilePath(cacheFileName)
+	if internal.IsFileExists(cacheFile) {
 		fmt.Printf("Loading %s from cache\n", resourceType)
 		bodyFile, err := os.ReadFile(cacheFile)
 		if err != nil {
