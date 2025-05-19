@@ -13,7 +13,7 @@ import (
 func LoadTitles(urls []domain.DofusNoobsRemoteSitemapUrl) (map[string]string, error) {
 	var titles map[string]string
 	if internal.FileExists(domain.TitlesFile) {
-		fmt.Println("Loading titlesFile from cache")
+		fmt.Println("Loading titles from cache")
 		bodyFile, err := os.ReadFile(domain.TitlesFile)
 		if err != nil {
 			log.Fatalf("LoadTitles: %v", err)
@@ -33,6 +33,10 @@ func LoadTitles(urls []domain.DofusNoobsRemoteSitemapUrl) (map[string]string, er
 		}
 	}
 
+	if len(urlsFiltered) > 0 {
+		fmt.Printf("Fetching %d missing titles entries\n", len(urlsFiltered))
+	}
+	
 	titles, err := HttpClient.GetPageTitleDofusNoobs(initMaps, urlsFiltered)
 	if err != nil {
 		log.Fatalf("GetPageTitleDofusNoobs: %v", err)
