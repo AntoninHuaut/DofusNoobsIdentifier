@@ -1,7 +1,7 @@
 {
-  "total": 1950,
+  "total": 1978,
   "limit": 50,
-  "skip": 1950,
+  "skip": 2000,
   "data": [
     {
       "id": 18,
@@ -3885,11 +3885,11 @@
         "de": "Lauf, Fressmütchen, lauf!",
         "en": "Run Mastogobbly, Sun",
         "es": "Corre jalamutín, corre",
-        "fr": "Michel Shel enquille un Bouftonmouth",
-        "id": "885925",
+        "fr": "Michel Shel enquille un bouftonmouth",
+        "id": "1150854",
         "pt": "Corra, Paparneiromute, corra!"
       },
-      "startCriterion": "PL\u003e89\u0026PL\u003c140\u0026Qa!537\u0026Qa!538"
+      "startCriterion": "PL\u003e89\u0026Qa!537\u0026Qa!538\u0026Qa!539\u0026Qa!540\u0026Qa!541"
     },
     {
       "id": 537,
@@ -3901,7 +3901,7 @@
         "id": "885699",
         "pt": "Espécie em perigo"
       },
-      "startCriterion": "PL\u003e89\u0026PL\u003c140\u0026Qa!536\u0026Qa!538"
+      "startCriterion": "PL\u003e89\u0026Qa!536\u0026Qa!538\u0026Qa!539\u0026Qa!540\u0026Qa!541"
     },
     {
       "id": 538,
@@ -3913,7 +3913,7 @@
         "id": "885979",
         "pt": "Pé gelado"
       },
-      "startCriterion": "PL\u003e89\u0026PL\u003c140\u0026Qa!536\u0026Qa!537"
+      "startCriterion": "PL\u003e89\u0026Qa!536\u0026Qa!537\u0026Qa!539\u0026Qa!540\u0026Qa!541"
     },
     {
       "id": 539,
@@ -3925,7 +3925,7 @@
         "id": "885826",
         "pt": "A morte lhe cai tão bem"
       },
-      "startCriterion": "PL\u003e139\u0026Qa!540\u0026Qa!541"
+      "startCriterion": "PL\u003e139\u0026Qa!540\u0026Qa!541\u0026Qa!536\u0026Qa!537\u0026Qa!538"
     },
     {
       "id": 540,
@@ -3937,7 +3937,7 @@
         "id": "885972",
         "pt": "Lágrimas antes de dormir"
       },
-      "startCriterion": "PL\u003e139\u0026Qa!539\u0026Qa!541"
+      "startCriterion": "PL\u003e139\u0026Qa!539\u0026Qa!541\u0026Qa!536\u0026Qa!537\u0026Qa!538"
     },
     {
       "id": 541,
@@ -3949,7 +3949,7 @@
         "id": "886136",
         "pt": "A mina sinistra"
       },
-      "startCriterion": "PL\u003e139\u0026Qa!539\u0026Qa!540"
+      "startCriterion": "PL\u003e139\u0026Qa!539\u0026Qa!540\u0026Qa!536\u0026Qa!537\u0026Qa!538"
     },
     {
       "id": 542,
@@ -5053,7 +5053,7 @@
         "id": "885584",
         "pt": "Acidente de caça"
       },
-      "startCriterion": "PL\u003e99\u0026Qa!637\u0026Qa!638"
+      "startCriterion": "PL\u003e99"
     },
     {
       "id": 637,
@@ -5065,7 +5065,7 @@
         "id": "885616",
         "pt": "Caçada perigosa"
       },
-      "startCriterion": "PL\u003e99\u0026Qa!636\u0026Qa!638"
+      "startCriterion": "PL\u003e99\u0026Qf=636\u0026(DH\u003e12,32105|PO!32105)"
     },
     {
       "id": 638,
@@ -5077,7 +5077,7 @@
         "id": "886029",
         "pt": "De mãos abanando"
       },
-      "startCriterion": "PL\u003e99\u0026Qa!636\u0026Qa!637"
+      "startCriterion": "PL\u003e99\u0026Qf=637\u0026(DH\u003e12,32105|PO!32105)"
     },
     {
       "id": 639,
@@ -5089,7 +5089,7 @@
         "id": "886100",
         "pt": "Baú do caçador"
       },
-      "startCriterion": "PL\u003e129"
+      "startCriterion": "PL\u003e129\u0026PO!32167\u0026PO!11381"
     },
     {
       "id": 640,
@@ -5125,7 +5125,7 @@
         "id": "885586",
         "pt": "Monstros de neve"
       },
-      "startCriterion": "PL\u003e149"
+      "startCriterion": "PL\u003e149\u0026(PO!32113|DM\u003e29,32113)"
     },
     {
       "id": 643,
@@ -15694,8 +15694,8 @@
         "en": "Production Secret",
         "es": "Secreto de producción",
         "fr": "Secret de fabrication",
-        "id": "506282",
-        "pt": "Segredo de fabricação"
+        "id": "1149336",
+        "pt": "Segredo de Fabricação"
       },
       "startCriterion": "Qa=1609\u0026Qo\u003e9469"
     },
@@ -20425,7 +20425,7 @@
         "id": "779712",
         "pt": "A espada da rocha"
       },
-      "startCriterion": "Qf=1462\u0026PL\u003e100\u0026Sc=842"
+      "startCriterion": "Qf=1462\u0026PL\u003e99\u0026Sc=842"
     },
     {
       "id": 2036,
@@ -20461,7 +20461,7 @@
         "id": "779062",
         "pt": "Em busca de Crocoburio"
       },
-      "startCriterion": "Qf=2037\u0026PL\u003e189\u0026Sc=842"
+      "startCriterion": "Qf=2037\u0026PL\u003e179\u0026Sc=842"
     },
     {
       "id": 2039,
@@ -23402,6 +23402,342 @@
         "pt": "Gladiador de corpo e alma"
       },
       "startCriterion": "PL\u003e19\u0026Pz=0\u0026Sc=887"
+    },
+    {
+      "id": 2515,
+      "name": {
+        "de": "Da oben geht's heiß her",
+        "en": "Trouble in Paradise",
+        "es": "El follón de arriba",
+        "fr": "Ça barde là-haut",
+        "id": "1138942",
+        "pt": "O bicho tá pegando lá em cima"
+      },
+      "startCriterion": "PL\u003e149\u0026(Qf=1484|(Qa=1484\u0026Qo\u003e8349))"
+    },
+    {
+      "id": 2516,
+      "name": {
+        "de": "Hummelflug",
+        "en": "Flight of the Bumblebees",
+        "es": "A vuelo de zángano",
+        "fr": "Le vol des bourdons",
+        "id": "1142884",
+        "pt": "O voo dos zangões"
+      },
+      "startCriterion": "PL\u003e149\u0026Qf=2515\u0026Qf=2520"
+    },
+    {
+      "id": 2517,
+      "name": {
+        "de": "Opfer seiner Wahrheiten",
+        "en": "Prey to the Truths",
+        "es": "Presa de las verdades",
+        "fr": "La proie des vérités",
+        "id": "1142886",
+        "pt": "A presa das verdades"
+      },
+      "startCriterion": "PL\u003e179\u0026Qf=2516"
+    },
+    {
+      "id": 2518,
+      "name": {
+        "de": "Drei Herzen, ein König",
+        "en": "Three Hearts, One King",
+        "es": "Tres corazones, un rey",
+        "fr": "Trois cœurs, un roi",
+        "id": "1142889",
+        "pt": "Três corações, um rei"
+      },
+      "startCriterion": "PL\u003e179\u0026Qf=2517"
+    },
+    {
+      "id": 2519,
+      "name": {
+        "de": "Zerstörer der Welten",
+        "en": "Destroyer of Worlds",
+        "es": "Destructor de mundos",
+        "fr": "Destructeur de mondes",
+        "id": "1142891",
+        "pt": "Destruidor de mundos"
+      },
+      "startCriterion": "PL\u003e179\u0026Qf=2518"
+    },
+    {
+      "id": 2520,
+      "name": {
+        "de": "Ein Größenproblem",
+        "en": "A Sizeable Problem",
+        "es": "Un problema de envergadura",
+        "fr": "Un problème de taille",
+        "id": "1138812",
+        "pt": "Problemão ou probleminha"
+      },
+      "startCriterion": "PL\u003e149"
+    },
+    {
+      "id": 2521,
+      "name": {
+        "de": "Kleine Viecher, die Ksskssbs machen",
+        "en": "Critters That Go Bzzzbz",
+        "es": "Estos bichos son la bombz",
+        "fr": "Des petites bêtes qui font bzzzbz",
+        "id": "1142897",
+        "pt": "Criaturinhas que fazem bzzzbz"
+      },
+      "startCriterion": "Qa=2516\u0026Qo\u003e19299"
+    },
+    {
+      "id": 2522,
+      "name": {
+        "de": "Eierköpfe",
+        "en": "Laying Leaders",
+        "es": "Puestas a disposición",
+        "fr": "Têtes de ponte",
+        "id": "1142899",
+        "pt": "Postura de ataque"
+      },
+      "startCriterion": "Qa=2516\u0026Qo\u003e19304"
+    },
+    {
+      "id": 2523,
+      "name": {
+        "de": "Insektierertum",
+        "en": "Insectarianism",
+        "es": "Insectarismo",
+        "fr": "Dérive insectaire",
+        "id": "1142901",
+        "pt": "Deriva insetal"
+      },
+      "startCriterion": "Qa=2516\u0026Qo\u003e19312"
+    },
+    {
+      "id": 2524,
+      "name": {
+        "de": "Gesucht wird: Ganos",
+        "en": "Wanted: Boarus",
+        "es": "Se busca: Boarus",
+        "fr": "On recherche Ganos",
+        "id": "1129051",
+        "pt": "Procura-se: Ganos"
+      },
+      "startCriterion": "PL\u003e179"
+    },
+    {
+      "id": 2525,
+      "name": {
+        "de": "Dem Instinkt folgen",
+        "en": "To Follow One's Instinct",
+        "es": "Seguir el instinto",
+        "fr": "Suivre son instinct",
+        "id": "1130023",
+        "pt": "Seguir seu instinto"
+      },
+      "startCriterion": "PL\u003e179\u0026Qf=2515\u0026(WE=229|WE=254)\u0026(DD\u003e7,31745|PO!31745)"
+    },
+    {
+      "id": 2526,
+      "name": {
+        "de": "Möge die Jagd beginnen!",
+        "en": "The Hunt Is On!",
+        "es": "¡Que empiece la caza!",
+        "fr": "Que la chasse commence !",
+        "id": "1130079",
+        "pt": "Que comece a caça!"
+      },
+      "startCriterion": "PL\u003e179\u0026Qf=2515\u0026(WE=228|WE=252)\u0026(DD\u003e7,31746|PO!31746)"
+    },
+    {
+      "id": 2527,
+      "name": {
+        "de": "Göttlicher Nektar",
+        "en": "Divine Nectar",
+        "es": "Un divino néctar",
+        "fr": "Un divin nectar",
+        "id": "1130083",
+        "pt": "Néctar divino"
+      },
+      "startCriterion": "PL\u003e179\u0026Qf=2515\u0026Qf=2516\u0026(WE=230|WE=255)\u0026(DD\u003e7,32026|PO!32026)"
+    },
+    {
+      "id": 2528,
+      "name": {
+        "de": "Der einsame Gourmet",
+        "en": "The Lone Foodie",
+        "es": "El gourmet solitario",
+        "fr": "Le gourmet solitaire",
+        "id": "1130084",
+        "pt": "O gourmet solitário"
+      },
+      "startCriterion": "PL\u003e179\u0026Qf=2515\u0026PJ\u003e41,169\u0026(((WE=230|WE=255)\u0026(DD\u003e7,31579|PO!31579))|((WE=229|WE=254)\u0026(DD\u003e7,31578|PO!31578))|((WE=228|WE=252)\u0026(DD\u003e7,31577|PO!31577)))"
+    },
+    {
+      "id": 2529,
+      "name": {
+        "de": "Ein kleiner Juckreiz",
+        "en": "Something Itchy",
+        "es": "Una pequeña comezón",
+        "fr": "Une petite démangeaison",
+        "id": "1130097",
+        "pt": "Uma coceirinha"
+      },
+      "startCriterion": "PL\u003e179\u0026Qf=2515\u0026(((WE=230|WE=255)\u0026(DD\u003e7,31582|PO!31582))|((WE=229|WE=254)\u0026(DD\u003e7,31581|PO!31581))|((WE=228|WE=252)\u0026(DD\u003e7,31580|PO!31580)))"
+    },
+    {
+      "id": 2530,
+      "name": {
+        "de": "Wer suchet, der findet",
+        "en": "Oddly Defenceless",
+        "es": "De esparcirla a estar en ella",
+        "fr": "Quand on la cherche, on finit par tomber dessus",
+        "id": "1142982",
+        "pt": "Quem procura acha"
+      },
+      "startCriterion": "PL\u003e179\u0026Qa=2517\u0026Qo\u003e19282"
+    },
+    {
+      "id": 2531,
+      "name": {
+        "de": "Mäßigungsgebot",
+        "en": "No Reservations",
+        "es": "Deber de reserva",
+        "fr": "Devoir de réserve",
+        "id": "1142905",
+        "pt": "Dever de reserva"
+      },
+      "startCriterion": "PL\u003e179\u0026Qa=2517\u0026Qo\u003e19391"
+    },
+    {
+      "id": 2532,
+      "name": {
+        "de": "Ehrengast",
+        "en": "Remarkable Guest",
+        "es": "Un huésped que deja marca",
+        "fr": "Un hôte de marque",
+        "id": "1142909",
+        "pt": "Um hospedeiro notável"
+      },
+      "startCriterion": "PL\u003e179\u0026Qa=2518\u0026Qo\u003e19394"
+    },
+    {
+      "id": 2533,
+      "name": {
+        "de": "Heiliger Bund",
+        "en": "Sacred Union",
+        "es": "La sagrada unión",
+        "fr": "L'union sacrée",
+        "id": "1142913",
+        "pt": "A união sagrada"
+      },
+      "startCriterion": "PL\u003e179\u0026Qa=2518\u0026Qo\u003e19403"
+    },
+    {
+      "id": 2534,
+      "name": {
+        "de": "Vierzig Tobsüchtige",
+        "en": "The Roaring Forty",
+        "es": "Cuarenta rugidores",
+        "fr": "Quarante rugissants",
+        "id": "1140144",
+        "pt": "Quarenta rugientes"
+      },
+      "startCriterion": "PL\u003e179\u0026Qf=2515"
+    },
+    {
+      "id": 2535,
+      "name": {
+        "de": "Der Narbenkönig",
+        "en": "The Scarred King",
+        "es": "El rey caracortada",
+        "fr": "Le roi balafré",
+        "id": "1141265",
+        "pt": "O rei marcado"
+      },
+      "startCriterion": "PL\u003e179\u0026Qf=2515\u0026Qf=2518"
+    },
+    {
+      "id": 2536,
+      "name": {
+        "de": "Die Barbärmampfe der Dimensionen",
+        "en": "Dimensional Gluttons",
+        "es": "Los glotones de las dimensiones",
+        "fr": "Les gloutons des dimensions",
+        "id": "1143709",
+        "pt": "Os glutões das dimensões"
+      },
+      "startCriterion": "PL\u003e179\u0026Qf=2515"
+    },
+    {
+      "id": 2538,
+      "name": {
+        "de": "Archäologische Schatzjagd",
+        "en": "Archaeological Treasure Hunt",
+        "es": "Búsqueda del tesoro arqueológico",
+        "fr": "Chasse au trésor archéologique",
+        "id": "1154189",
+        "pt": "Caça ao tesouro arqueológico"
+      },
+      "startCriterion": "PL\u003e119\u0026Qf=1527\u0026Qa!2539\u0026Qa!2540\u0026Qa!2541\u0026Qa!2542\u0026Qa!2543"
+    },
+    {
+      "id": 2539,
+      "name": {
+        "de": "Tägliche Schatzjagd",
+        "en": "Daily Treasure Hunt",
+        "es": "Búsqueda del tesoro diaria",
+        "fr": "Chasse au trésor quotidienne",
+        "id": "1154222",
+        "pt": "Caça ao tesouro cotidiana"
+      },
+      "startCriterion": "PL\u003e19\u0026Qa!2538\u0026Qa!2540\u0026Qa!2541\u0026Qa!2542\u0026Qa!2543"
+    },
+    {
+      "id": 2540,
+      "name": {
+        "de": "Jagd auf den Schatz von Güss",
+        "en": "Guss Treasure Hunt",
+        "es": "Búsqueda del tesoro de Guss",
+        "fr": "Chasse au trésor de Güss",
+        "id": "1154264",
+        "pt": "Caça ao tesouro de Guss"
+      },
+      "startCriterion": "PL\u003e19\u0026Ad=177\u0026Qa!2538\u0026Qa!2539"
+    },
+    {
+      "id": 2541,
+      "name": {
+        "de": "Jagd auf den Schatz von Scheik",
+        "en": "Scheik Treasure Hunt",
+        "es": "Búsqueda del tesoro de Scheik",
+        "fr": "Chasse au trésor de Scheik",
+        "id": "1154272",
+        "pt": "Caça ao tesouro de Scheik"
+      },
+      "startCriterion": "PL\u003e19\u0026Ad=245\u0026Qa!2538\u0026Qa!2539"
+    },
+    {
+      "id": 2542,
+      "name": {
+        "de": "Jagd auf den Schatz von Sad",
+        "en": "Sad Treasure Hunt",
+        "es": "Búsqueda del tesoro de Sad",
+        "fr": "Chasse au trésor de Sad",
+        "id": "1154276",
+        "pt": "Caça ao tesouro de Sad"
+      },
+      "startCriterion": "PL\u003e19\u0026Ad=13\u0026Qa!2538\u0026Qa!2539"
+    },
+    {
+      "id": 2543,
+      "name": {
+        "de": "Jagd auf den Schatz von Milivar",
+        "en": "Milivar Treasure Hunt",
+        "es": "Búsqueda del tesoro de Milivar",
+        "fr": "Chasse au trésor de Milivar",
+        "id": "1154284",
+        "pt": "Caça ao tesouro de Milivar"
+      },
+      "startCriterion": "PL\u003e19\u0026Ad=102\u0026Qa!2538\u0026Qa!2539"
     }
   ]
 }

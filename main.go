@@ -87,7 +87,6 @@ func main() {
 	}
 	logKey(domain.DungeonsKey)
 
-	internal.WriteToFile("mapping.json", output, false, false) // Keep previous path to compatibility with browser extension
 	internal.WriteToFile(internal.GetStorageFilePath("mapping.json"), output, false, false)
 	internal.WriteToFile(internal.GetStorageFilePath("mapping_formatted.json"), output, true, false)
 }

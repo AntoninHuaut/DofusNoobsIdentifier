@@ -4,8 +4,22 @@ dungeons:
     - 44 # "repaire de sphincter cell"
   remapped_id:
     73: "https://www.dofuspourlesnoobs.com/aquadocircme-de-merkator.html"
+    172: "https://www.dofuspourlesnoobs.com/aquadocircme-de-merkator.html"
+    200: "https://www.dofuspourlesnoobs.com/aquadocircme-de-merkator.html"
   remapped_prefix: {}
-  rewrite_target: []
+  rewrite_target:
+    - from: "expédition de l'audace - "
+      to: ""
+      position: "prefix"
+      group: "expedition_audace"
+    - from: "expédition de la bravoure - "
+      to: ""
+      position: "prefix"
+      group: "expedition_bravoure"
+    - from: "expédition - "
+      to: ""
+      position: "prefix"
+      group: "expédition"
 
 quests:
   unmapped_id:
@@ -36,6 +50,7 @@ quests:
     - 671 # "quatorzième postage"
     - 668 # "onzième postage"
   remapped_id:
+    861: "https://www.dofuspourlesnoobs.com/la-clef-de-la-reacuteussite-nowel.html" # two quests with the same name
     930: "https://www.dofuspourlesnoobs.com/gare-aux-krokilles-juveacutenilesnovicesmaturesveacuteneacuterables.html"
     931: "https://www.dofuspourlesnoobs.com/gare-aux-krokilles-juveacutenilesnovicesmaturesveacuteneacuterables.html"
     932: "https://www.dofuspourlesnoobs.com/gare-aux-krokilles-juveacutenilesnovicesmaturesveacuteneacuterables.html"
@@ -44,15 +59,19 @@ quests:
     "offrande à ": "https://www.dofuspourlesnoobs.com/calendrier-de-lalmanax.html"
     "chasse au dopeul ": "https://www.dofuspourlesnoobs.com/chemin-optimal--dopeuls.html"
   rewrite_target:
-    - from_suffix: "touriste"
-      to_suffix: "touriste/amateur/spécialiste/expert"
-      group: "generic_suffix"
-    - from_suffix: "amateur"
-      to_suffix: "touriste/amateur/spécialiste/expert"
-      group: "generic_suffix"
-    - from_suffix: "spécialiste"
-      to_suffix: "touriste/amateur/spécialiste/expert"
-      group: "generic_suffix"
-    - from_suffix: "expert"
-      to_suffix: "touriste/amateur/spécialiste/expert"
-      group: "generic_suffix"
+    - from: "touriste"
+      to: "touriste/amateur/spécialiste/expert"
+      position: "suffix"
+      group: "vulkania_level"
+    - from: "amateur"
+      to: "touriste/amateur/spécialiste/expert"
+      position: "suffix"
+      group: "vulkania_level"
+    - from: "spécialiste"
+      to: "touriste/amateur/spécialiste/expert"
+      position: "suffix"
+      group: "vulkania_level"
+    - from: "expert"
+      to: "touriste/amateur/spécialiste/expert"
+      position: "suffix"
+      group: "vulkania_level"

@@ -34,9 +34,10 @@ type ManualKey struct {
 }
 
 type ManuelRewriteTarget struct {
-	FromSuffix string `yaml:"from_suffix"`
-	ToSuffix   string `yaml:"to_suffix"`
-	Group      string `yaml:"group"` // Only one rewrite target per group will be applied
+	From     string `yaml:"from"`
+	To       string `yaml:"to"`
+	Position string `yaml:"position"` // prefix or suffix
+	Group    string `yaml:"group"`    // Only one rewrite target per group will be applied
 }
 
 func (mf *ManualFile) GetIfRemapped(key TypeKey, id int, title string) (string, bool) {
@@ -79,8 +80,12 @@ func (mf *ManualFile) RewriteTarget(key TypeKey, target string) string {
 			if slices.Contains(appliedGroups, rewriteTarget.Group) {
 				continue
 			}
-			if len(rewriteTarget.FromSuffix) > 0 && strings.HasSuffix(target, rewriteTarget.FromSuffix) {
-				target = strings.ReplaceAll(target, rewriteTarget.FromSuffix, rewriteTarget.ToSuffix)
+
+			if rewriteTarget.Position == "prefix" && strings.HasPrefix(target, rewriteTarget.From) {
+				target = rewriteTarget.To + strings.TrimPrefix(target, rewriteTarget.From)
+				appliedGroups = append(appliedGroups, rewriteTarget.Group)
+			} else if rewriteTarget.Position == "suffix" && strings.HasSuffix(target, rewriteTarget.From) {
+				target = strings.TrimSuffix(target, rewriteTarget.From) + rewriteTarget.To
 				appliedGroups = append(appliedGroups, rewriteTarget.Group)
 			}
 		}

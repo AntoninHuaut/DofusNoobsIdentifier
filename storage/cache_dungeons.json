@@ -1,5 +1,5 @@
 {
-  "total": 144,
+  "total": 187,
   "limit": 50,
   "skip": 200,
   "data": [
@@ -1370,221 +1370,694 @@
     {
       "id": 143,
       "name": {
-        "de": "Königlicher Tofustall",
-        "en": "Royal Tofu House",
-        "es": "Tofullinero Real",
-        "fr": "Tofulailler Royal",
-        "id": "1078950",
-        "pt": "Tofuleiro Real"
+        "de": "Expediton - Königlicher Tofustall",
+        "en": "Expedition – Royal Tofu House",
+        "es": "Expedición - Tofullinero Real",
+        "fr": "Expédition - Tofulailler Royal",
+        "id": "1152549",
+        "pt": "Expedição - Tofuleiro Real"
       }
     },
     {
       "id": 144,
       "name": {
-        "de": "Hof des Königlichen Fresssacks",
-        "en": "Royal Gobball's Court",
-        "es": "Corte del Jalató Real",
-        "fr": "Cour du Bouftou Royal",
-        "id": "1068792",
-        "pt": "Pátio do Papatudo Real"
+        "de": "Expediton - Hof des Königlichen Fresssacks",
+        "en": "Expedition – Royal Gobball's Court",
+        "es": "Expedición - Corte del Jalató Real",
+        "fr": "Expédition - Cour du Bouftou Royal",
+        "id": "1152550",
+        "pt": "Expedição - Pátio do Papatudo Real"
       }
     },
     {
       "id": 145,
       "name": {
-        "de": "Weich-Eich-Lichtung",
-        "en": "Soft Oak Clearing",
-        "es": "Claro del Roble Blando",
-        "fr": "Clairière du Chêne Mou",
-        "id": "1068794",
-        "pt": "Clareira do Carvalho Mole"
+        "de": "Expediton - Weich-Eich-Lichtung",
+        "en": "Expedition – Soft Oak Clearing",
+        "es": "Expedición - Claro del Roble Blando",
+        "fr": "Expédition - Clairière du Chêne Mou",
+        "id": "1152551",
+        "pt": "Expedição - Clareira do Carvalho Mole"
       }
     },
     {
       "id": 146,
       "name": {
-        "de": "Dungeon der Schattenschmiede",
-        "en": "Blacksmith Dungeon",
-        "es": "Mazmorra de los Herreros",
-        "fr": "Donjon des Forgerons",
-        "id": "1068795",
-        "pt": "Calabouço dos Ferreiros"
+        "de": "Expediton - Dungeon der Schattenschmiede",
+        "en": "Expedition – Blacksmith Dungeon",
+        "es": "Expedición - Mazmorra de los Herreros",
+        "fr": "Expédition - Donjon des Forgerons",
+        "id": "1152552",
+        "pt": "Expedição - Calabouço dos Ferreiros"
       }
     },
     {
       "id": 147,
       "name": {
-        "de": "Höhle von Crocabulia",
-        "en": "Crocabulia's Lair",
-        "es": "Antro de Cocabulia",
-        "fr": "Antre de Crocabulia",
-        "id": "1068796",
-        "pt": "Antro de Crocabulia"
+        "de": "Expedition - Höhle von Crocabulia",
+        "en": "Expedition – Crocabulia's Lair",
+        "es": "Expedición - Antro de Cocabulia",
+        "fr": "Expédition - Antre de Crocabulia",
+        "id": "1152553",
+        "pt": "Expedição - Antro de Crocabulia"
       }
     },
     {
       "id": 148,
       "name": {
-        "de": "Herz des Labyrinths des Minotorors",
-        "en": "Inner Labyrinth of the Minotoror",
-        "es": "Centro del Laberinto del Minotauroro",
-        "fr": "Centre du Labyrinthe du Minotoror",
-        "id": "1068797",
-        "pt": "Centro do Labirinto do Minotoror"
+        "de": "Expedition - Herz des Labyrinths des Minotorors",
+        "en": "Expedition – Inner Labyrinth of the Minotoror",
+        "es": "Expedición - Centro del Laberinto del Minotauroro",
+        "fr": "Expédition - Centre du Labyrinthe du Minotoror",
+        "id": "1152554",
+        "pt": "Expedição - Centro do Labirinto do Minotoror"
       }
     },
     {
       "id": 149,
       "name": {
-        "de": "Meister Rabs Bibliothek",
-        "en": "Lord Crow's Library",
-        "es": "Biblioteca del Maestro Cuerbok",
-        "fr": "Bibliothèque du Maître Corbac",
-        "id": "1068798",
-        "pt": "Biblioteca do Mestre Corvoc"
+        "de": "Expediton - Meister Rabs Bibliothek",
+        "en": "Expedition – Lord Crow's Library",
+        "es": "Expedición - Biblioteca del Maestro Cuerbok",
+        "fr": "Expédition - Bibliothèque du Maître Corbac",
+        "id": "1152555",
+        "pt": "Expedição - Biblioteca do Mestre Corvoc"
       }
     },
     {
       "id": 150,
       "name": {
-        "de": "Scheune des Ausgehungerten Sonnenblümchens",
-        "en": "Famished Sunflower's Barn",
-        "es": "Granero del Girasol Hambriento",
-        "fr": "Grange du Tournesol Affamé",
-        "id": "1068638",
-        "pt": "Granja do Girassol Faminto"
+        "de": "Expediton - Scheune des Ausgehungerten Sonnenblümchens",
+        "en": "Expedition – Famished Sunflower's Barn",
+        "es": "Expedición - Granero del Girasol Hambriento",
+        "fr": "Expédition - Grange du Tournesol Affamé",
+        "id": "1152556",
+        "pt": "Expedição - Granja do Girassol Faminto"
       }
     },
     {
       "id": 151,
       "name": {
-        "de": "Unterschlupf des Königlichen Multiblobs",
-        "en": "Royal Rainbow Blop Lair",
-        "es": "Antro del Blop Multicolor Real",
-        "fr": "Antre du Blop Multicolore Royal",
-        "id": "1068799",
-        "pt": "Antro do Blop Arco-Íris Real"
+        "de": "Expedition - Unterschlupf des Königlichen Multiblobs",
+        "en": "Expedition – Royal Rainbow Blop Lair",
+        "es": "Expedición - Antro del Blop Multicolor Real",
+        "fr": "Expédition - Antre du Blop Multicolore Royal",
+        "id": "1152557",
+        "pt": "Expedição - Antro do Blop Arco-Íris Real"
       }
     },
     {
       "id": 152,
       "name": {
-        "de": "Hausmausefalle der Schwarzen Ratte",
-        "en": "Black Rat's Moumousetrap",
-        "es": "Raratonera de la Rata Negra",
-        "fr": "Sousouricière du Rat Noir",
-        "id": "1068800",
-        "pt": "Armadilha para Cacamundongo do Rato Negro - Sexta sala"
+        "de": "Expediton - Hausmausefalle der Schwarzen Ratte",
+        "en": "Expedition – Black Rat's Moumousetrap",
+        "es": "Expedición - Raratonera de la Rata Negra",
+        "fr": "Expédition - Sousouricière du Rat Noir",
+        "id": "1152558",
+        "pt": "Expedição - Armadilha do Rato Negro"
       }
     },
     {
       "id": 153,
       "name": {
-        "de": "Bwork-Dungeon",
-        "en": "Bwork Dungeon",
-        "es": "Mazmorra de los Bworks",
-        "fr": "Donjon des Bworks",
-        "id": "1068801",
-        "pt": "Calabouço dos Bworks"
+        "de": "Expediton - Bwork-Dungeon",
+        "en": "Expedition – Bwork Dungeon",
+        "es": "Expedición - Mazmorra de los Bworks",
+        "fr": "Expédition - Donjon des Bworks",
+        "id": "1152559",
+        "pt": "Expedição - Calabouço dos Bworks"
       }
     },
     {
       "id": 154,
       "name": {
-        "de": "Krachlerfelszacken",
-        "en": "Crackler's Rocky Peaks",
-        "es": "Picos Rocosos de los Crujidores",
-        "fr": "Pitons Rocheux des Craqueleurs",
-        "id": "1068802",
-        "pt": "Picos Rochosos dos Smagadores"
+        "de": "Expediton - Krachlerfelszacken",
+        "en": "Expedition – Crackler's Rocky Peaks",
+        "es": "Expedición - Picos Rocosos de los Crujidores",
+        "fr": "Expédition - Pitons Rocheux des Craqueleurs",
+        "id": "1152560",
+        "pt": "Expedição - Picos Rochosos dos Smagadores"
       }
     },
     {
       "id": 155,
       "name": {
-        "de": "Vorratskammer der Weißen Ratte",
-        "en": "White Rat's Pantry",
-        "es": "Despensa de la Rata Blanca",
-        "fr": "Garde-manger du Rat Blanc",
-        "id": "1068791",
-        "pt": "Despensa do Rato Branco"
+        "de": "Expediton - Vorratskammer der Weißen Ratte",
+        "en": "Expedition – White Rat's Pantry",
+        "es": "Expedición - Despensa de la Rata Blanca",
+        "fr": "Expédition - Garde-manger du Rat Blanc",
+        "id": "1152561",
+        "pt": "Expedição - Despensa do Rato Branco"
       }
     },
     {
       "id": 156,
       "name": {
-        "de": "Unterschlupf des MuWulfs",
-        "en": "Moowolf Lair",
-        "es": "Guarida del Maxilubo",
-        "fr": "Tanière du Meulou",
-        "id": "1068790",
-        "pt": "Toca do Mulobo"
+        "de": "Expedition - Unterschlupf des MuWulfs",
+        "en": "Expedition – Moowolf Lair",
+        "es": "Expedición - Guarida del Maxilubo",
+        "fr": "Expédition - Tanière du Meulou",
+        "id": "1152562",
+        "pt": "Expedição - Toca do Mulobo"
       }
     },
     {
       "id": 157,
       "name": {
-        "de": "Dungeon der Skelette",
-        "en": "Skeleton Dungeon",
-        "es": "Mazmorra de los Esqueletos",
-        "fr": "Donjon des Squelettes",
-        "id": "1068789",
-        "pt": "Calabouço dos Skeletos"
+        "de": "Expediton - Dungeon der Skelette",
+        "en": "Expedition – Skeleton Dungeon",
+        "es": "Expedición - Mazmorra de los Esqueletos",
+        "fr": "Expédition - Donjon des Squelettes",
+        "id": "1152563",
+        "pt": "Expedição - Calabouço dos Skeletos"
       }
     },
     {
       "id": 158,
       "name": {
-        "de": "Höhlen des Kuhlosses",
-        "en": "Koolich Cavern",
-        "es": "Cueva del Trankitronko",
-        "fr": "Caverne du Koulosse",
-        "id": "1068788",
-        "pt": "Caverna do Tronkoso"
+        "de": "Expedition - Höhle des Kuhlosses",
+        "en": "Expedition – Koolich Cavern",
+        "es": "Expedición - Cueva del Trankitronko",
+        "fr": "Expédition - Caverne du Koulosse",
+        "id": "1152564",
+        "pt": "Expedição - Caverna do Tronkoso"
       }
     },
     {
       "id": 159,
       "name": {
-        "de": "Moons Baum",
-        "en": "Moon's Tree",
-        "es": "Árbol de Moon",
-        "fr": "Arbre de Moon",
-        "id": "1068787",
-        "pt": "Árvore de Moon"
+        "de": "Expedition - Moons Baum",
+        "en": "Expedition – Moon's Tree",
+        "es": "Expedición - Árbol de Moon",
+        "fr": "Expédition - Arbre de Moon",
+        "id": "1152565",
+        "pt": "Expedição - Árvore de Moon"
       }
     },
     {
       "id": 160,
       "name": {
-        "de": "Verzauberte Sandburg",
-        "en": "Sandy Castle",
-        "es": "Castillo de Arena",
-        "fr": "Château Ensablé",
-        "id": "1068786",
-        "pt": "Castelo Arenoso"
+        "de": "Expediton - Verzauberte Sandburg",
+        "en": "Expedition – Sandy Castle",
+        "es": "Expedición - Castillo de Arena",
+        "fr": "Expédition - Château Ensablé",
+        "id": "1152566",
+        "pt": "Expedição - Castelo Arenoso"
       }
     },
     {
       "id": 161,
       "name": {
-        "de": "Scarablatt-Dungeon",
-        "en": "Scaraleaf Dungeon",
-        "es": "Mazmorra de los Escarahojas",
-        "fr": "Donjon des Scarafeuilles",
-        "id": "1068785",
-        "pt": "Calabouço dos Scarafolhas"
+        "de": "Expediton - Scarablatt-Dungeon",
+        "en": "Expedition – Scaraleaf Dungeon",
+        "es": "Expedición - Mazmorra de los Escarahojas",
+        "fr": "Expédition - Donjon des Scarafeuilles",
+        "id": "1152567",
+        "pt": "Expedição - Calabouço dos Scarafolhas"
       }
     },
     {
       "id": 162,
       "name": {
-        "de": "Unterschlupf des Schweinedrachens",
-        "en": "Dragon Pig's Den",
-        "es": "Antro del Dragocerdo",
-        "fr": "Antre du Dragon Cochon",
-        "id": "1068803",
-        "pt": "Antro do Dragão-Porco"
+        "de": "Expedition - Unterschlupf des Schweinedrachens",
+        "en": "Expedition – Dragon Pig's Den",
+        "es": "Expedición - Antro del Dragocerdo",
+        "fr": "Expédition - Antre du Dragon Cochon",
+        "id": "1152568",
+        "pt": "Expedição - Antro do Dragão-Porco"
+      }
+    },
+    {
+      "id": 163,
+      "name": {
+        "de": "Supervizei-Kontrollstelle",
+        "en": "Bzzegg Supervisor's Checkpoint",
+        "es": "Puesto de Control del Bzupervibzor",
+        "fr": "Poste de contrôle du Supervizœuf",
+        "id": "1134051",
+        "pt": "Posto de Controle do Supervizovo"
+      }
+    },
+    {
+      "id": 164,
+      "name": {
+        "de": "Unterholz des Ehrwürdigen",
+        "en": "The Venerable One's Thicket",
+        "es": "Coto del Venerable",
+        "fr": "Breuil du Vénérable",
+        "id": "1134060",
+        "pt": "Bosque do Venerável"
+      }
+    },
+    {
+      "id": 165,
+      "name": {
+        "de": "Altar der Reißerin",
+        "en": "The Ripper's Altar",
+        "es": "Altar de la Despedazadora",
+        "fr": "Autel de la Déchireuse",
+        "id": "1134061",
+        "pt": "Altar da Dilaceradora"
+      }
+    },
+    {
+      "id": 166,
+      "name": {
+        "de": "Expedition der Kühnheit – Höhle des Bworkers",
+        "en": "Daring Expedition – Bworker's Cave",
+        "es": "Expedición de Audacia - Cueva de Bworker",
+        "fr": "Expédition de l'Audace - Grotte du Bworker",
+        "id": "1152619",
+        "pt": "Expedição da Audácia - Gruta do Bworker"
+      }
+    },
+    {
+      "id": 167,
+      "name": {
+        "de": "Expedition der Kühnheit – Minotot-Raum",
+        "en": "Daring Expedition – Minotot Room",
+        "es": "Expedición de Audacia - Sala de Minotot",
+        "fr": "Expédition de l'Audace - Salle du Minotot",
+        "id": "1152657",
+        "pt": "Expedição da Audácia - Sala do Minotot"
+      }
+    },
+    {
+      "id": 168,
+      "name": {
+        "de": "Expedition der Kühnheit – Dungeon der Mine von Arkal",
+        "en": "Daring Expedition – Sakai Mine Dungeon",
+        "es": "Expedición de Audacia - Mazmorra de la Mina de Kéfriho",
+        "fr": "Expédition de l'Audace - Donjon de la mine de Sakaï",
+        "id": "1152655",
+        "pt": "Expedição da Audácia - Calabouço da Mina de Kifril"
+      }
+    },
+    {
+      "id": 169,
+      "name": {
+        "de": "Expedition der Kühnheit – Die privaten Gesellschaftszimmer R. Klimms",
+        "en": "Daring Expedition – Klime's Private Suite",
+        "es": "Expedición de Audacia - Sala Privada de Klim",
+        "fr": "Expédition de l'Audace - Salons privés de Klime",
+        "id": "1152653",
+        "pt": "Expedição da Audácia - Salões Privados de Klim"
+      }
+    },
+    {
+      "id": 170,
+      "name": {
+        "de": "Expedition der Kühnheit – Missiz Frizzs Kaltschmiede",
+        "en": "Daring Expedition – Missiz Freezz's Frostforge",
+        "es": "Expedición de Audacia - Forjafría de Mizz Frizz",
+        "fr": "Expédition de l'Audace - Forgefroide de Missiz Frizz",
+        "id": "1152651",
+        "pt": "Expedição da Audácia - Forjafria de Missiz Frizz"
+      }
+    },
+    {
+      "id": 171,
+      "name": {
+        "de": "Expedition der Kühnheit – Graf Primzahls Dungeon",
+        "en": "Daring Expedition – Count Harebourg's Dungeon",
+        "es": "Expedición de Audacia - Mazmorra del Conde Kontatrás",
+        "fr": "Expédition de l'Audace - Donjon du Comte Harebourg",
+        "id": "1152649",
+        "pt": "Expedição da Audácia - Calabouço do Conde Traspafrent"
+      }
+    },
+    {
+      "id": 172,
+      "name": {
+        "de": "Expedition der Kühnheit – Merkators Unterwasserkuppel",
+        "en": "Daring Expedition – Merkator's Aquadome",
+        "es": "Expedición de Audacia - Acuadomo de Merkator",
+        "fr": "Expédition de l'Audace - Aquadôme de Merkator",
+        "id": "1152647",
+        "pt": "Expedição da Audácia - Aquódromo do Merkator"
+      }
+    },
+    {
+      "id": 173,
+      "name": {
+        "de": "Expedition der Kühnheit – Schattenpyramide",
+        "en": "Daring Expedition – Shadow's Pyramid",
+        "es": "Expedición de Audacia - Pirámide de Sombra",
+        "fr": "Expédition de l'Audace - Pyramide d'Ombre",
+        "id": "1152645",
+        "pt": "Expedição da Audácia - Pirâmide do Sombra"
+      }
+    },
+    {
+      "id": 174,
+      "name": {
+        "de": "Expedition der Kühnheit – Kanigroulas Höhle",
+        "en": "Daring Expedition – Kanigrula's Cave",
+        "es": "Expedición de Audacia - Gruta de Kanígrula",
+        "fr": "Expédition de l'Audace - Grotte de Kanigroula",
+        "id": "1152643",
+        "pt": "Expedição da Audácia - Gruta da Kanígrula"
+      }
+    },
+    {
+      "id": 175,
+      "name": {
+        "de": "Expedition der Kühnheit – Griesengad-Stollen",
+        "en": "Daring Expedition – Drhossil's Caves",
+        "es": "Expedición de Audacia - Galería de Perfósil",
+        "fr": "Expédition de l'Audace - Galerie du Phossile",
+        "id": "1152641",
+        "pt": "Expedição da Audácia - Galeria do Perfuror"
+      }
+    },
+    {
+      "id": 176,
+      "name": {
+        "de": "Expedition der Kühnheit – Toxoliaths Höhle",
+        "en": "Daring Expedition – Toxoliath's Cave",
+        "es": "Expedición de Audacia - Cueva de Toxoliat",
+        "fr": "Expédition de l'Audace - Cave du Toxoliath",
+        "id": "1152639",
+        "pt": "Expedição da Audácia - Porão do Toxolias"
+      }
+    },
+    {
+      "id": 177,
+      "name": {
+        "de": "Expedition der Kühnheit – Bauch des Wals",
+        "en": "Daring Expedition – Belly of the Whale",
+        "es": "Expedición de Audacia - Vientre de la Ballena",
+        "fr": "Expédition de l'Audace - Ventre de la Baleine",
+        "id": "1152637",
+        "pt": "Expedição da Audácia - Barriga da Baleia"
+      }
+    },
+    {
+      "id": 178,
+      "name": {
+        "de": "Expedition der Kühnheit – XLIIs Uruhrurwerk",
+        "en": "Daring Expedition – XLII's Metronomicon",
+        "es": "Expedición de Audacia - Relojarium de XLII",
+        "fr": "Expédition de l'Audace - Horologium de XLII",
+        "id": "1152635",
+        "pt": "Expedição da Audácia - Relogium de XLII"
+      }
+    },
+    {
+      "id": 179,
+      "name": {
+        "de": "Expedition der Kühnheit – Kapitän Menos Schiff",
+        "en": "Daring Expedition – Captain Meno's Ship",
+        "es": "Expedición de Audacia - Nave del Capitán Meno",
+        "fr": "Expédition de l'Audace - Vaisseau du Capitaine Meno",
+        "id": "1152633",
+        "pt": "Expedição da Audácia - Navio do Capitão Meno"
+      }
+    },
+    {
+      "id": 180,
+      "name": {
+        "de": "Expedition der Kühnheit – Tempel von Kutuluh",
+        "en": "Daring Expedition – Koutoulou's Temple",
+        "es": "Expedición de Audacia - Templo de Kutulú",
+        "fr": "Expédition de l'Audace - Temple de Koutoulou",
+        "id": "1152631",
+        "pt": "Expedição da Audácia - Templo de Katulu"
+      }
+    },
+    {
+      "id": 181,
+      "name": {
+        "de": "Expedition der Kühnheit – Palast von Zantinea",
+        "en": "Daring Expedition – Dantinea's Palace",
+        "es": "Expedición de Audacia - Palacio de Dientinea",
+        "fr": "Expédition de l'Audace - Palais de Dantinéa",
+        "id": "1152629",
+        "pt": "Expedição da Audácia - Palácio de Dentinea"
+      }
+    },
+    {
+      "id": 182,
+      "name": {
+        "de": "Expedition der Kühnheit – Ilyzaelle-Dungeon",
+        "en": "Daring Expedition – Ilyzaelle's Lookout",
+        "es": "Expedición de Audacia - Mirador de Ilyzaelle",
+        "fr": "Expédition de l'Audace - Belvédère d'Ilyzaelle",
+        "id": "1152627",
+        "pt": "Expedição da Audácia - Mirante de Ilyzaelle"
+      }
+    },
+    {
+      "id": 183,
+      "name": {
+        "de": "Expedition der Kühnheit – Solars Turm",
+        "en": "Daring Expedition – Solar's Tower",
+        "es": "Expedición de Audacia - Torre de Solar",
+        "fr": "Expédition de l'Audace - Tour de Solar",
+        "id": "1152625",
+        "pt": "Expedição da Audácia - Torre de Solar"
+      }
+    },
+    {
+      "id": 184,
+      "name": {
+        "de": "Expedition der Kühnheit – König Dazahks Brauerei",
+        "en": "Daring Expedition – King Dazahk's Brewery",
+        "es": "Expedición de Audacia - Cervecería del Rey Dazahk",
+        "fr": "Expédition de l'Audace - Brasserie du roi Dazak",
+        "id": "1152623",
+        "pt": "Expedição da Audácia - Cervejaria do rei Dazak"
+      }
+    },
+    {
+      "id": 185,
+      "name": {
+        "de": "Expedition der Kühnheit – Thron des Blutes",
+        "en": "Daring Expedition – Blood Throne",
+        "es": "Expedición de Audacia - Trono de Sangre",
+        "fr": "Expédition de l'Audace - Trône de Sang",
+        "id": "1152621",
+        "pt": "Expedição da Audácia - Trono de Sangue"
+      }
+    },
+    {
+      "id": 186,
+      "name": {
+        "de": "Expedition der Tapferkeit – Höhle des Bworkers",
+        "en": "Bravery Expedition – Bworker's Cave",
+        "es": "Expedición de Bravura - Cueva de Bworker",
+        "fr": "Expédition de la Bravoure - Grotte du Bworker",
+        "id": "1152620",
+        "pt": "Expedição da Bravura - Gruta do Bworker"
+      }
+    },
+    {
+      "id": 187,
+      "name": {
+        "de": "Expedition der Tapferkeit – Thron des Blutes",
+        "en": "Bravery Expedition – Blood Throne",
+        "es": "Expedición de Bravura - Trono de Sangre",
+        "fr": "Expédition de la Bravoure - Trône de Sang",
+        "id": "1152622",
+        "pt": "Expedição da Bravura - Trono de Sangue"
+      }
+    },
+    {
+      "id": 188,
+      "name": {
+        "de": "Expedition der Tapferkeit – König Dazahks Brauerei",
+        "en": "Bravery Expedition – King Dazahk's Brewery",
+        "es": "Expedición de Bravura - Cervecería del Rey Dazahk",
+        "fr": "Expédition de la Bravoure - Brasserie du roi Dazak",
+        "id": "1152624",
+        "pt": "Expedição da Bravura - Cervejaria do rei Dazak"
+      }
+    },
+    {
+      "id": 189,
+      "name": {
+        "de": "Expedition der Tapferkeit – Solars Turm",
+        "en": "Bravery Expedition – Solar's Tower",
+        "es": "Expedición de Bravura - Torre de Solar",
+        "fr": "Expédition de la Bravoure - Tour de Solar",
+        "id": "1152626",
+        "pt": "Expedição da Bravura - Torre de Solar"
+      }
+    },
+    {
+      "id": 190,
+      "name": {
+        "de": "Expedition der Tapferkeit – Ilyzaelle-Dungeon",
+        "en": "Bravery Expedition – Ilyzaelle's Lookout",
+        "es": "Expedición de Bravura - Mirador de Ilyzaelle",
+        "fr": "Expédition de la Bravoure - Belvédère d'Ilyzaelle",
+        "id": "1152628",
+        "pt": "Expedição da Bravura - Mirante de Ilyzaelle"
+      }
+    },
+    {
+      "id": 191,
+      "name": {
+        "de": "Expedition der Tapferkeit – Palast von Zantinea",
+        "en": "Bravery Expedition – Dantinea's Palace",
+        "es": "Expedición de Bravura - Palacio de Dientinea",
+        "fr": "Expédition de la Bravoure - Palais de Dantinéa",
+        "id": "1152630",
+        "pt": "Expedição da Bravura - Palácio de Dentinea"
+      }
+    },
+    {
+      "id": 192,
+      "name": {
+        "de": "Expedition der Tapferkeit – Tempel von Kutuluh",
+        "en": "Bravery Expedition – Koutoulou's Temple",
+        "es": "Expedición de Bravura - Templo de Kutulú",
+        "fr": "Expédition de la Bravoure - Temple de Koutoulou",
+        "id": "1152632",
+        "pt": "Expedição da Bravura - Templo de Katulu"
+      }
+    },
+    {
+      "id": 193,
+      "name": {
+        "de": "Expedition der Tapferkeit – Kapitän Menos Schiff",
+        "en": "Bravery Expedition – Captain Meno's Ship",
+        "es": "Expedición de Bravura - Nave del Capitán Meno",
+        "fr": "Expédition de la Bravoure - Vaisseau du Capitaine Meno",
+        "id": "1152634",
+        "pt": "Expedição da Bravura - Navio do Capitão Meno"
+      }
+    },
+    {
+      "id": 194,
+      "name": {
+        "de": "Expedition der Tapferkeit – XLIIs Uruhrurwerk",
+        "en": "Bravery Expedition – XLII's Metronomicon",
+        "es": "Expedición de Bravura - Relojarium de XLII",
+        "fr": "Expédition de la Bravoure - Horologium de XLII",
+        "id": "1152636",
+        "pt": "Expedição da Bravura - Relogium de XLII"
+      }
+    },
+    {
+      "id": 195,
+      "name": {
+        "de": "Expedition der Tapferkeit – Bauch des Wals",
+        "en": "Bravery Expedition – Belly of the Whale",
+        "es": "Expedición de Bravura - Vientre de la Ballena",
+        "fr": "Expédition de la Bravoure - Ventre de la Baleine",
+        "id": "1152638",
+        "pt": "Expedição da Bravura - Barriga da Baleia"
+      }
+    },
+    {
+      "id": 196,
+      "name": {
+        "de": "Expedition der Tapferkeit – Toxoliaths Höhle",
+        "en": "Bravery Expedition – Toxoliath's Cave",
+        "es": "Expedición de Bravura - Cueva de Toxoliat",
+        "fr": "Expédition de la Bravoure - Cave du Toxoliath",
+        "id": "1152640",
+        "pt": "Expedição da Bravura - Porão do Toxolias"
+      }
+    },
+    {
+      "id": 197,
+      "name": {
+        "de": "Expedition der Tapferkeit – Griesengad-Stollen",
+        "en": "Bravery Expedition – Drhossil's Caves",
+        "es": "Expedición de Bravura - Galería de Perfósil",
+        "fr": "Expédition de la Bravoure - Galerie du Phossile",
+        "id": "1152642",
+        "pt": "Expedição da Bravura - Galeria do Perfuror"
+      }
+    },
+    {
+      "id": 198,
+      "name": {
+        "de": "Expedition der Tapferkeit – Kanigroulas Höhle",
+        "en": "Bravery Expedition – Kanigrula's Cave",
+        "es": "Expedición de Bravura - Gruta de Kanígrula",
+        "fr": "Expédition de la Bravoure - Grotte de Kanigroula",
+        "id": "1152644",
+        "pt": "Expedição da Bravura - Gruta da Kanígrula"
+      }
+    },
+    {
+      "id": 199,
+      "name": {
+        "de": "Expedition der Tapferkeit – Schattenpyramide",
+        "en": "Bravery Expedition – Shadow's Pyramid",
+        "es": "Expedición de Bravura - Pirámide de Sombra",
+        "fr": "Expédition de la Bravoure - Pyramide d'Ombre",
+        "id": "1152646",
+        "pt": "Expedição da Bravura - Pirâmide do Sombra"
+      }
+    },
+    {
+      "id": 200,
+      "name": {
+        "de": "Expedition der Tapferkeit – Merkators Unterwasserkuppel",
+        "en": "Bravery Expedition – Merkator's Aquadome",
+        "es": "Expedición de Bravura - Acuadomo de Merkator",
+        "fr": "Expédition de la Bravoure - Aquadôme de Merkator",
+        "id": "1152648",
+        "pt": "Expedição da Bravura - Aquódromo do Merkator"
+      }
+    },
+    {
+      "id": 201,
+      "name": {
+        "de": "Expedition der Tapferkeit – Graf Primzahls Dungeon",
+        "en": "Bravery Expedition – Count Harebourg's Dungeon",
+        "es": "Expedición de Bravura - Mazmorra del Conde Kontatrás",
+        "fr": "Expédition de la Bravoure - Donjon du Comte Harebourg",
+        "id": "1152650",
+        "pt": "Expedição da Bravura - Calabouço do Conde Traspafrent"
+      }
+    },
+    {
+      "id": 202,
+      "name": {
+        "de": "Expedition der Tapferkeit – Missiz Frizzs Kaltschmiede",
+        "en": "Bravery Expedition – Missiz Freezz's Frostforge",
+        "es": "Expedición de Bravura - Forjafría de Mizz Frizz",
+        "fr": "Expédition de la Bravoure - Forgefroide de Missiz Frizz",
+        "id": "1152652",
+        "pt": "Expedição da Bravura - Forjafria de Missiz Frizz"
+      }
+    },
+    {
+      "id": 203,
+      "name": {
+        "de": "Expedition der Tapferkeit – Die privaten Gesellschaftszimmer R. Klimms",
+        "en": "Bravery Expedition – Klime's Private Suite",
+        "es": "Expedición de Bravura - Sala Privada de Klim",
+        "fr": "Expédition de la Bravoure - Salons privés de Klime",
+        "id": "1152654",
+        "pt": "Expedição da Bravura - Salões Privados de Klim"
+      }
+    },
+    {
+      "id": 204,
+      "name": {
+        "de": "Expedition der Tapferkeit – Dungeon der Mine von Arkal",
+        "en": "Bravery Expedition – Sakai Mine Dungeon",
+        "es": "Expedición de Bravura - Mazmorra de la Mina de Kéfriho",
+        "fr": "Expédition de la Bravoure - Donjon de la mine de Sakaï",
+        "id": "1152656",
+        "pt": "Expedição da Bravura - Calabouço da Mina de Kifril"
+      }
+    },
+    {
+      "id": 205,
+      "name": {
+        "de": "Expedition der Tapferkeit – Minotot-Raum",
+        "en": "Bravery Expedition – Minotot Room",
+        "es": "Expedición de Bravura - Sala de Minotot",
+        "fr": "Expédition de la Bravoure - Salle du Minotot",
+        "id": "1152658",
+        "pt": "Expedição da Bravura - Sala do Minotot"
       }
     }
   ]
